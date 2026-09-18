@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Right To Be Free</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+      url('images/hero-boat.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* --- Nav bar --- */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 48px;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus-visible {
+    text-decoration: underline;
+  }
+
+  /* --- Hero content --- */
+  .hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 24px 80px;
+  }
+
+  .headline {
+    font-size: clamp(36px, 6vw, 76px);
+    font-weight: 900;
+    line-height: 1.05;
+    text-transform: uppercase;
+    max-width: 1100px;
+  }
+
+  .headline .accent {
+    color: #E8B927;
+  }
+
+  .subtitle {
+    margin-top: 24px;
+    font-size: clamp(16px, 2vw, 20px);
+    max-width: 560px;
+    line-height: 1.5;
+  }
+
+  .cta-row {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn {
+    background-color: #A9C7E8;
+    color: #10202E;
+    border: none;
+    border-radius: 999px;
+    padding: 18px 36px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+  }
+
+  .btn:hover,
+  .btn:focus-visible {
+    background-color: #93B7DE;
+    transform: translateY(-1px);
+  }
+
+  /* --- Mobile --- */
+  @media (max-width: 720px) {
+    .nav {
+      flex-direction: column;
+      gap: 16px;
+      padding: 24px;
+    }
+
+    .nav-links {
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="hero">
+    <nav class="nav">
+      <div class="logo">Right to Be Free</div>
+      <ul class="nav-links">
+        <li><a href="#kids">Our kids</a></li>
+        <li><a href="#learn">Learn more</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1 class="headline">Every child deserves <span class="accent">freedom</span></h1>
+      <p class="subtitle">We rescue children from human trafficking and help them rebuild their lives.</p>
+      <div class="cta-row">
+        <a href="#donate" class="btn">Donate now</a>
+        <a href="#impact" class="btn">See our impact</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
