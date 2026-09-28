@@ -1,160 +1,856 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Right To Be Free</title>
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-  }
-
-  .hero {
-    position: relative;
-    min-height: 100vh;
-    background-image:
-      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-      url('hero-boat.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* --- Nav bar --- */
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 48px;
-  }
-
-  .logo {
-    font-size: 20px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-  }
-
-  .nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  .nav-links a:hover,
-  .nav-links a:focus-visible {
-    text-decoration: underline;
-  }
-
-  /* --- Hero content --- */
-  .hero-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 24px 80px;
-  }
-
-  .headline {
-    font-size: clamp(36px, 6vw, 76px);
-    font-weight: 900;
-    line-height: 1.05;
-    text-transform: uppercase;
-    max-width: 1100px;
-  }
-
-  .headline .accent {
-    color: #E8B927;
-  }
-
-  .subtitle {
-    margin-top: 24px;
-    font-size: clamp(16px, 2vw, 20px);
-    max-width: 560px;
-    line-height: 1.5;
-  }
-
-  .cta-row {
-    margin-top: 40px;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .btn {
-    background-color: #A9C7E8;
-    color: #10202E;
-    border: none;
-    border-radius: 999px;
-    padding: 18px 36px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    transition: transform 0.15s ease, background-color 0.15s ease;
-  }
-
-  .btn:hover,
-  .btn:focus-visible {
-    background-color: #93B7DE;
-    transform: translateY(-1px);
-  }
-
-  /* --- Mobile --- */
-  @media (max-width: 720px) {
-    .nav {
-      flex-direction: column;
-      gap: 16px;
-      padding: 24px;
-    }
-
-    .nav-links {
-      gap: 24px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-</style>
+<meta name="description" content="We rescue children from human trafficking and help them rebuild their lives.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Epilogue:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body class="home">
+<header class="site-header on-hero">
+  <a class="brand" href="index.html">Right To Be Free</a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" aria-label="Main">
+    <a href="our-kids.html">Our kids</a>
+    <a href="learn-more.html">Learn more</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <div class="hero">
-    <nav class="nav">
-      <div class="logo">Right to Be Free</div>
-      <ul class="nav-links">
-        <li><a href="#kids">Our kids</a></li>
-        <li><a href="#learn">Learn more</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<main>
+<section class="hero">
+  <img class="hero-bg" src="images/hero-boat.jpg" alt="">
+  <div class="hero-inner">
+    <h1>Every Child Deserves <span class="gold">Freedom</span></h1>
+    <p>We rescue children from human trafficking and help them rebuild their lives.</p>
+    <p class="btn-row"><a class="btn btn-sky" href="contact.html#contactanddonate">Donate now</a><a class="btn btn-sky" href="#impact">See our impact</a></p>
+  </div>
+</section>
 
-    <div class="hero-content">
-      <h1 class="headline">Every child deserves <span class="accent">freedom</span></h1>
-      <p class="subtitle">We rescue children from human trafficking and help them rebuild their lives.</p>
-      <div class="cta-row">
-        <a href="#donate" class="btn">Donate now</a>
-        <a href="#impact" class="btn">See our impact</a>
-      </div>
+<section class="sky partners">
+  <div class="wrap partners-grid">
+    <div><h2 class="h-small gold">In Partnership With</h2><ul class="plain partner-list"><li>Ghana Police Service</li><li>Interpol</li><li>Anti-Trafficking Unit</li><li>Immigration Service</li><li>Community Leaders</li><li></li></ul></div>
+    <div class="stats-card">
+
+<div class="ig-stats">
+<div class="ig-stats__inner">
+<div class="ig-stat">
+<div class="ig-stat__num" data-suffix="+" data-target="5000">0+</div>
+<div class="ig-stat__label">Children Reached</div>
+</div>
+<div class="ig-stat">
+<div class="ig-stat__num" data-suffix="+" data-target="300">0+</div>
+<div class="ig-stat__label">Children Rescued</div>
+</div>
+<div class="ig-stat">
+<div class="ig-stat__num" data-suffix="+" data-target="50">0+</div>
+<div class="ig-stat__label">Communities Educated</div>
+</div>
+<div class="ig-stat">
+<div class="ig-stat__num" data-suffix="+" data-target="15">0+</div>
+<div class="ig-stat__label">Years of Impact</div>
+</div>
+</div>
+</div>
+<style>
+.ig-stats{
+  background:#ffffff;
+  padding:56px 24px;
+  width:100%;
+}
+.ig-stats__inner{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  align-items:stretch;
+  justify-content:center;
+}
+.ig-stat{
+  flex:1 1 0;
+  text-align:center;
+  padding:8px 20px;
+  border-left:1px solid #e2e6ea;
+}
+.ig-stat:first-child{ border-left:none; }
+
+.ig-stat__num{
+  font-family:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight:800;
+  font-size:clamp(40px,5vw,64px);
+  line-height:1.05;
+  letter-spacing:-0.02em;
+  color:#1D4E79;
+  font-variant-numeric:tabular-nums;
+  margin-bottom:14px;
+}
+.ig-stat__label{
+  font-family:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight:500;
+  font-size:13px;
+  line-height:1.4;
+  letter-spacing:0.13em;
+  text-transform:uppercase;
+  color:#5B6773;
+}
+@media (max-width:767px){
+  .ig-stats{ padding:40px 16px; }
+  .ig-stats__inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:36px 0;
+  }
+  .ig-stat{ padding:0 12px; border-left:none; }
+  .ig-stat:nth-child(even){ border-left:1px solid #e2e6ea; }
+  .ig-stat__label{ font-size:11px; letter-spacing:0.11em; }
+}
+</style>
+<script>
+(function(){
+  var nums = document.querySelectorAll('.ig-stat__num');
+  if(!nums.length) return;
+
+  /* Bail out if the browser is old or the visitor prefers reduced motion.
+     The correct numbers are already in the HTML, so doing nothing is safe. */
+  if(!('IntersectionObserver' in window)) return;
+  if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  function render(el, value){
+    el.textContent = Number(value).toLocaleString('en-US') + (el.dataset.suffix || '');
+  }
+
+  function countUp(el){
+    var target = parseFloat(el.dataset.target) || 0;
+    var duration = 1600, start = null;
+
+    function step(ts){
+      if(start === null) start = ts;
+      var p = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - p, 3);      // ease-out cubic
+      render(el, Math.round(target * eased));
+      if(p < 1) requestAnimationFrame(step);
+      else render(el, target);
+    }
+    requestAnimationFrame(step);
+  }
+  nums.forEach(function(el){ render(el, 0); });
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ countUp(e.target); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.4 });
+
+  nums.forEach(function(el){ io.observe(el); });
+})();
+</script>
+
     </div>
   </div>
+</section>
 
+<section class="paper" id="what-we-do">
+  <div class="wrap">
+    <h2 class="h-big center">What We Do</h2>
+    <p class="center lead">We follow a 3-stage model to fight human trafficking</p>
+    <div class="cards-3"><article class="card-step"><img src="images/rescue.jpg" alt="Rescue – Right To Be Free" loading="lazy"><h3>Rescue</h3><p>We identify, rescue, and protect children from trafficking and exploitation.</p></article><article class="card-step"><img src="images/rehabilitation.jpg" alt="Rehabilitation – Right To Be Free" loading="lazy"><h3>Rehabilitation</h3><p>We provide shelter, medical care, counselling, and education to help them heal.</p></article><article class="card-step"><img src="images/reintegration.jpg" alt="Reintegration – Right To Be Free" loading="lazy"><h3>Reintegration</h3><p>Rescued children are placed in a secure environment to ensure they will not be re-trafficked and are consistently checked on.</p></article></div>
+    <div class="acc-list"><details class="acc"><summary>Rescue, Rehabilitation and Reintegration</summary><div class="acc-body"><p>We rescue enslaved children in Ghana who are forced to work in the hazardous fishing and gold mining industries and the cocoa plantations (no funds are ever paid to the traffickers). We help rebuild their lives by providing victims with medical care, counseling and placement in school or vocational training. They are supported physically, emotionally and financially throughout their recovery and reintegration into society. </p><ul><li><p><strong>Rescue</strong>: During the year, the RTBF team, led by Eric Peasah, travels to the islands along Lake Volta, researching trafficked children. These long exhausting trips require a solid four wheel drive vehicle to navigate the unpaved roads and a boat and operator to take the team to the numerous islands along the lake. These annual expenses are investments in the freedom of every child that is subsequently rescued. </p><p>Lake Volta, created by the Akosombo Dam, is the world’s largest reservoir by surface area (3,275 square miles) and the fourth largest by water volume. This is where trafficked children are forced to risk their lives every day working in the hazardous fishing trade.</p><p>A rescue mission typically consists of more than three trips to Lake Volta, over a period of six months, to save all the children identified for rescue. Sometimes their masters refuse to release a child, despite prior discussions and agreements. Therefore, the team must return to follow up with the fisherman. When fishermen agree to release a child, they must sign a social contract pledging to no longer traffick children and to eventually release any remaining child laborers, or they will face criminal prosecution. </p><p><strong>NO</strong> money is ever paid to the fishermen to release their “property”. On occasion, Eric may offer to provide them with new fishing equipment (e.g. nets), to assist with the creation of a cooperative with other fishermen to create a fish pond along the lake with large nets and feeder fish, or to learn a new vocation such as carpentry or farming.</p><p>After a rescue mission, the real work continues. This is the challenge that governments in developing nations with limited resources face. Once a child is rescued, what next? If RTBF lacks the funds to rehabilitate and reintegrate a child, we cannot responsibly rescue them. Therefore, we must raise critical funding for the <em>entire</em> process, not just the rescue. </p></li></ul><ul><li><p><strong>Rehabilitation</strong>: During the six month rehabilitation program, the children are brought to the <a href="https://righttobefree.org/don-bosco-ngo.html" target="_blank" rel="noopener">Rehabilitation Center where they receive m</a>edical and counseling services, learn life skills (personal hygiene, manners, etc.) and transition into a classroom setting. Meanwhile, Eric attempts to trace the children's families and the children are later reunited with their parents, relatives or guardians. If a child is an orphan or there is no suitable caregiver, they are placed in a safe environment such as a shelter/home and we continue to support their care and education.</p></li></ul><ul><li><p><strong>Reintegration</strong>: Rescued children are placed in a secure environment to ensure they will not be re-trafficked. They are reunited with their family/caregivers and we continue to monitor them to ensure their successful reintegration into their villages. They are placed in schools or vocational training is arranged for older children who have been trafficked for many years and returning to school is not a viable alternative. </p><p>Since traffickers target poor families and prey on their desire for a better life for their children, RTBF may provide micro loans to support private enterprise opportunities to help families escape poverty and achieve financial independence. </p><p>Through our community outreach programs, families in "sending" villages, where children are trafficked from, are educated about the deceptive practices that traffickers use to deceive them and they learn about the fate of trafficked children. As a result of the success of these programs, there are now sending villages that notify the authorities when traffickers come and attempt to traffick their children. The "receiving" villages, where trafficked children are transported to, are educated about forced labor and the rights the trafficked children have to attend school, just as their own children do. By educating villagers in both the sending and receiving villages, child trafficking activities are stopped through societal change. </p></li></ul></div></details><details class="acc"><summary>Prevention</summary><div class="acc-body"><p>We educate and empower villages, families and school children to prevent trafficking and exploitation. <br>We teach families about human trafficking, the deceptive practices used by traffickers, and the abusive lives the children endure. Since poverty is a common cause for child trafficking, the most vulnerable female-headed households are identified and selected to join a cooperative where they receive a micro-grant and training in a business to increase their standard of living. </p><p>We also work with villages where children are trafficked to, and educate them about the harm inflicted on enslaved children. Working with other government and social agencies, we help connect them with alternative income generating opportunities so they no longer traffick and enslave children. We collaborate with Interpol, the Anti-Trafficking Unit of the Ghana Police Service, the Ministry of Gender, Children and Social Protection, police, anti-terrorism and security forces, NGO's, other governments and inter-governmental organizations to influence policy and stop child trafficking. </p></div></details><details class="acc"><summary>Awareness</summary><div class="acc-body"><p>Our educational outreach programs raise awareness of human trafficking and global human rights issues through complimentary presentations to schools, civic and trade organizations, community groups and churches in the U.S. and internationally. These groups include: Chicago Council for Global Affairs, Organization for Women in International Trade/Chicago, Northwestern University, Lake Forest Academy, University of Western Ontario/Canada, GEMS World Academy of Chicago, Lake Forest Country Day School, Deer Path Middle School, Lincoln Community School/Ghana, Woodlands Academy, Lake Forest High School, The Blake School and numerous Rotary Clubs. We connect students with rescued children to deepen their understanding of social justice issues and to enrich their cultural experiences. We advocate for systemic change by educating and motivating the public to join our anti-trafficking efforts. </p></div></details></div>
+    <p class="btn-row center"><a class="btn btn-outline" href="learn-more.html">Learn more about our work</a><a class="btn btn-black" href="our-kids.html#ourkids">See where our kids are today</a></p>
+  </div>
+</section>
+
+<section class="sky impact" id="impact">
+  <div class="wrap impact-grid">
+    <div class="impact-copy">
+      <h2 class="h-big"><span class="white">Real Impact.</span><br><span class="gold">Real Change.</span></h2>
+      <p>Every number represents a child whose life has been transformed through rescue, care and hope.</p>
+      <ul class="vstats plain" aria-label="Our impact in numbers">
+        <li><b>5,000+</b><span>Children reached</span></li>
+        <li><b>300+</b><span>Children rescued</span></li>
+        <li><b>50+</b><span>Communities educated</span></li>
+        <li><b>15+</b><span>Years of impact</span></li>
+      </ul>
+      <p><a class="btn btn-black" href="learn-more.html">Learn more about child labour in Ghana</a></p>
+    </div>
+    <div class="impact-map">
+
+<style>
+.tm-root{
+  --navy:#17456f; --navy-deep:#0f3355; --gold:#b8860b; --gold-br:#d8a12a;
+  --hot:#bf3624; --site:#149a6a; --land:#e8f1fb; --land-hi:#d6e7f9; --water:#a8c8e8;
+  --ink:#0f2438; --ink-2:#4c5c6b; --ink-3:#8a97a3; --line:rgba(15,36,56,.12); --card:#ffffff;
+  font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  color:var(--ink); background:#fff; border:1px solid var(--line); border-radius:12px;
+  overflow:hidden; max-width:100%; position:relative;
+}
+.tm-root *,.tm-root *::before,.tm-root *::after{box-sizing:border-box}
+
+.tm-bar{background:var(--navy); color:#fff; display:flex; align-items:center; justify-content:space-between;
+  gap:16px; padding:15px 22px; flex-wrap:wrap}
+.tm-bar h3{margin:0; font-size:14px; font-weight:700; letter-spacing:.11em; text-transform:uppercase; line-height:1.35}
+.tm-bar a{color:var(--gold-br); font-size:13px; font-weight:700; letter-spacing:.11em; text-transform:uppercase; text-decoration:none; white-space:nowrap}
+.tm-bar a:hover{text-decoration:underline}
+
+.tm-radio{position:absolute; opacity:0; pointer-events:none}
+.tm-tabs{display:flex; gap:12px; padding:20px 22px 4px; flex-wrap:wrap}
+.tm-tab{display:inline-block; cursor:pointer; padding:11px 20px; border-radius:8px; font-size:13.5px;
+  font-weight:700; letter-spacing:.06em; text-transform:uppercase; border:1.5px solid var(--navy);
+  color:var(--navy); background:#fff; transition:background .15s,color .15s}
+.tm-tab:hover{background:var(--land-hi)}
+#tm-t1:checked~.tm-tabs [for=tm-t1],#tm-t2:checked~.tm-tabs [for=tm-t2]{background:var(--navy); color:#fff}
+.tm-root .tm-tab:focus-visible,#tm-t1:focus-visible~.tm-tabs [for=tm-t1],#tm-t2:focus-visible~.tm-tabs [for=tm-t2]{outline:3px solid var(--gold-br); outline-offset:2px}
+
+.tm-panel{display:none; padding:8px 22px 0}
+#tm-t1:checked~.tm-panels .tm-p1,#tm-t2:checked~.tm-panels .tm-p2{display:block}
+
+.tm-stage{position:relative; width:100%; margin:0 auto;
+  aspect-ratio:var(--vbw)/var(--vbh)}
+.tm-stage-gh{max-width:540px}
+.tm-stage-wa{max-width:1020px}
+.tm-svg{position:absolute; inset:0; width:100%; height:100%; overflow:hidden; pointer-events:none}
+
+.tm-land{fill:var(--land); stroke:var(--navy); stroke-width:1.7; stroke-linejoin:round}
+.tm-land-focus{fill:#c3ddf6; stroke-width:2.8}
+.tm-lake{fill:var(--water); opacity:.85; stroke:#7fadd6; stroke-width:.8}
+.tm-arm{fill:none; stroke:var(--water); stroke-width:8; stroke-linecap:round; stroke-linejoin:round; opacity:.85}
+.tm-zone{stroke:none}
+.tm-zone-hot{fill:var(--hot); opacity:.11}
+.tm-zone-warn{fill:var(--gold-br); opacity:.16}
+.tm-route{fill:none; stroke:var(--hot); stroke-width:2.2; stroke-dasharray:7 6; stroke-linecap:round; opacity:.7}
+.tm-cname{fill:#9db4cc; font-size:26px; font-weight:800; letter-spacing:.15em; text-anchor:middle; pointer-events:none}
+.tm-cname-sm{font-size:13px; letter-spacing:.09em; fill:#96acc2}
+.tm-cname-focus{fill:var(--navy); font-size:15px}
+.tm-lakelbl{fill:#6f92b5; font-size:15px; font-weight:600; text-anchor:middle; pointer-events:none}
+.tm-compass .tm-n{fill:var(--ink-3); font-size:16px; font-weight:600; text-anchor:middle}
+.tm-compass path{stroke:var(--ink-3); stroke-width:1.8; fill:none; stroke-linecap:round}
+
+/* ---------- markers ---------- */
+.tm-mk{position:absolute; transform:translate(-50%,-50%); width:44px; height:44px; cursor:pointer;
+  appearance:none; -webkit-appearance:none; background:none; border:0; padding:0; margin:0; font:inherit; color:inherit; outline:none}
+.tm-halo,.tm-dot,.tm-tri{position:absolute; left:50%; top:50%; display:block}
+.tm-halo{width:34px; height:34px; margin:-17px 0 0 -17px; border-radius:50%; background:var(--site); opacity:.18;
+  transition:transform .16s ease}
+.tm-dot{width:17px; height:17px; margin:-8.5px 0 0 -8.5px; border-radius:50%; background:var(--site);
+  border:2.5px solid #fff; box-shadow:0 1px 3px rgba(0,0,0,.2); transition:transform .16s ease}
+.tm-tri{width:30px; height:26px; margin:-15px 0 0 -15px; fill:var(--hot); filter:drop-shadow(0 1px 2px rgba(0,0,0,.18));
+  transition:transform .16s ease}
+.tm-mk:hover .tm-halo,.tm-mk:focus .tm-halo{transform:scale(1.25)}
+.tm-mk:hover .tm-dot,.tm-mk:focus .tm-dot,.tm-mk:hover .tm-tri,.tm-mk:focus .tm-tri{transform:scale(1.14)}
+.tm-mk:focus-visible{outline:none}
+.tm-mk:focus-visible .tm-dot,.tm-mk:focus-visible .tm-tri{outline:3px solid var(--gold-br); outline-offset:3px}
+
+.tm-lab{position:absolute; top:50%; transform:translateY(-50%); white-space:nowrap; font-size:13px;
+  font-weight:700; color:var(--ink); text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 6px #fff; pointer-events:none; line-height:1.2}
+.tm-lab-r>.tm-lab{left:calc(50% + 14px)}
+.tm-lab-l>.tm-lab{right:calc(50% + 14px); text-align:right}
+.tm-lab-hot{color:var(--hot); font-size:12.5px; font-weight:700}
+
+/* ---------- hover card ---------- */
+.tm-card{position:absolute; z-index:20; width:262px; background:var(--card); border:1px solid var(--line);
+  border-radius:11px; box-shadow:0 8px 26px rgba(15,36,56,.18); padding:14px 16px;
+  opacity:0; visibility:hidden; transform:translateY(4px); transition:opacity .14s ease,transform .14s ease,visibility .14s;
+  pointer-events:none; text-align:left}
+.tm-card-r>.tm-card{left:calc(50% + 18px); top:calc(50% - 14px)}
+.tm-card-l>.tm-card{right:calc(50% + 18px); top:calc(50% - 14px)}
+.tm-mk:hover>.tm-card,.tm-mk:focus>.tm-card,.tm-mk:focus-within>.tm-card{opacity:1; visibility:visible; transform:translateY(0)}
+.tm-mk:hover{z-index:30}
+.tm-card-title{display:block; font-size:15px; font-weight:700; color:var(--navy); line-height:1.3}
+.tm-card-stat{display:block; font-size:14px; font-weight:700; color:var(--gold); margin-top:5px}
+.tm-card-note{display:block; margin:7px 0 0; font-size:13.5px; line-height:1.55; color:var(--ink-2)}
+
+/* ---------- legend + table ---------- */
+.tm-legend{display:flex; flex-wrap:wrap; gap:10px 26px; padding:18px 22px 4px; align-items:center}
+.tm-li{display:flex; align-items:center; gap:9px; font-size:13px; color:var(--ink-2)}
+.tm-sw{flex:none; display:block}
+.tm-sw-site{width:15px; height:15px; border-radius:50%; background:var(--site); border:2.5px solid #fff; box-shadow:0 0 0 1px var(--line)}
+.tm-sw-spot{width:0; height:0; border-left:9px solid transparent; border-right:9px solid transparent; border-bottom:15px solid var(--hot)}
+.tm-sw-route{width:26px; height:0; border-top:2.5px dashed var(--hot)}
+.tm-sw-zone{width:20px; height:14px; border-radius:7px; background:rgba(191,54,36,.16)}
+
+.tm-details{margin-top:14px; border-top:1px solid var(--line)}
+.tm-details summary{cursor:pointer; padding:13px 22px; font-size:13px; color:var(--ink-2); list-style:none; user-select:none}
+.tm-details summary::-webkit-details-marker{display:none}
+.tm-details summary::before{content:"\25B8\00a0"; color:var(--ink-3)}
+.tm-details[open] summary::before{content:"\25BE\00a0"}
+.tm-details summary:hover{color:var(--ink)}
+.tm-tw{overflow-x:auto; padding:0 22px 20px}
+.tm-details table{border-collapse:collapse; width:100%; font-size:13px; min-width:640px}
+.tm-details th{text-align:left; font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--ink-3); padding:8px 14px 8px 0; border-bottom:1px solid var(--line); white-space:nowrap}
+.tm-details td{padding:9px 14px 9px 0; border-bottom:1px solid var(--line); color:var(--ink-2); vertical-align:top}
+.tm-details td:nth-child(3){color:var(--ink); font-weight:600}
+.tm-details td.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+.tm-details tr:last-child td{border-bottom:none}
+.tm-key{display:inline-block; vertical-align:middle; margin-right:7px}
+.tm-key-site{width:11px; height:11px; border-radius:50%; background:var(--site)}
+.tm-key-spot{width:0; height:0; border-left:6px solid transparent; border-right:6px solid transparent; border-bottom:11px solid var(--hot)}
+
+.tm-foot{padding:0 22px 18px; font-size:12px; color:var(--ink-3); line-height:1.5}
+
+@media (max-width:640px){
+  .tm-bar h3{font-size:12.5px}
+  .tm-tab{padding:9px 14px; font-size:12px}
+  .tm-panel,.tm-legend,.tm-tw,.tm-foot{padding-left:14px; padding-right:14px}
+  .tm-card{width:210px; padding:11px 13px}
+  .tm-card-title{font-size:14px} .tm-card-note{font-size:12.5px}
+  .tm-lab{font-size:11px} .tm-cname{font-size:20px}
+  .tm-dot{width:14px;height:14px;margin:-7px 0 0 -7px} .tm-tri{width:24px;height:21px;margin:-12px 0 0 -12px}
+  .tm-stage-gh{max-width:78%} .tm-stage-wa{max-width:100%}
+  .tm-root .tm-mk>.tm-card{left:50%; right:auto; top:calc(50% + 24px); width:min(250px,74vw); transform:translate(-50%,4px)}
+  .tm-root .tm-mk:hover>.tm-card,.tm-root .tm-mk:focus>.tm-card,.tm-root .tm-mk:focus-within>.tm-card{transform:translate(-50%,0)}
+}
+</style>
+<div class="tm-root">
+<div class="tm-bar">
+<h3>Trafficking &amp; Rescue Map — Ghana &amp; West Africa</h3>
+</div>
+<input checked="" class="tm-radio" id="tm-t1" name="tmtab" type="radio"/>
+<input class="tm-radio" id="tm-t2" name="tmtab" type="radio"/>
+<div class="tm-tabs" role="tablist">
+<label class="tm-tab" for="tm-t1" tabindex="0">Ghana detail</label>
+<label class="tm-tab" for="tm-t2" tabindex="0">West Africa overview</label>
+</div>
+<div class="tm-panels">
+<div class="tm-panel tm-p1">
+<div class="tm-stage tm-stage-gh" style="--vbw:620;--vbh:900">
+<svg aria-label="Map" class="tm-svg" role="img" viewbox="0 0 620 900">
+<defs>
+<marker id="gh-arrow" markerheight="5.5" markerwidth="5.5" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10">
+<path d="M0,0 L10,5 L0,10 Z" fill="#bf3624" opacity=".85"></path>
+</marker>
+</defs>
+<path class="tm-land" d="M437.3,27.6L445.9,35.8L447.8,40.5L444.9,58.1L438.7,70.3L434.4,81.8L435.4,87.4L438.7,93.3L451.6,102.2L458.3,108.0L466.4,116.9L475.5,125.6L490.8,136.8L497.0,138.9L497.0,142.0L494.6,146.4L493.2,188.3L492.2,199.3L490.8,204.7L489.4,220.3L487.9,222.7L485.1,222.4L482.2,222.9L481.7,226.2L482.7,229.2L492.2,231.5L489.8,233.9L483.2,236.0L479.8,240.6L481.2,246.3L477.4,250.5L478.9,253.3L481.2,255.6L485.1,254.7L496.0,247.4L500.3,246.7L506.1,248.1L516.6,259.1L516.6,264.7L512.8,283.1L508.5,297.4L507.5,316.3L512.3,327.0L511.3,332.8L506.6,337.7L496.0,345.2L497.0,350.1L501.8,359.4L510.9,369.9L528.5,382.7L537.6,399.4L538.1,406.2L532.4,412.9L526.1,418.8L524.2,427.4L527.1,483.4L512.8,507.6L512.8,514.6L514.2,522.5L518.0,527.3L525.2,528.7L530.9,533.4L529.0,550.6L525.7,567.7L525.2,576.3L523.3,580.3L518.0,583.5L516.1,588.9L517.5,595.6L516.1,600.7L519.5,607.2L525.7,615.3L535.7,635.2L540.0,636.9L541.4,641.0L540.5,645.0L544.3,653.8L555.8,662.8L567.7,670.5L577.3,671.6L579.6,678.4L585.8,687.2L590.6,691.1L597.8,693.6L604,695.0L604,702.5L593.5,707.5L585.8,715.2L580.1,726.8L572.5,739.5L546.2,746.2L535.7,746.5L481.2,746.7L429.7,771.9L400.5,780.9L382.4,795.1L358.0,805.2L340.8,817.5L305.5,823.3L247.2,842.5L229.0,850.1L210.9,863.5L180.8,879.2L169.3,879.0L145.9,864.4L128.3,857.0L85.3,845.7L53.3,841.5L37.5,836.7L33.7,835.8L37.0,830.4L46.1,830.2L55.6,831.8L62.3,827.7L72.8,827.2L75.7,823.0L76.7,812.4L76.7,803.8L80.0,800.1L81.0,790.0L75.7,767.7L72.4,765.2L53.7,762.0L52.3,757.6L49.0,752.7L45.1,741.4L41.3,724.2L34.6,702.9L21.7,667.9L18.9,655.4L16.5,642.9L16,627.6L18.9,622.0L18.4,614.4L17.4,606.5L26.0,588.6L43.7,566.8L47.0,558.9L50.4,553.3L50.9,545.4L54.2,519.9L62.3,489.2L67.6,477.4L70.9,471.1L75.2,460.9L76.7,456.0L92.4,443.9L100.1,440.6L101.5,436.0L99.1,430.6L100.1,427.1L103.9,425.3L109.6,423.9L113.9,419.0L107.2,380.8L102.0,342.8L101.5,339.6L98.2,334.2L95.3,318.6L89.6,309.5L81.9,306.7L82.4,298.1L90.0,283.4L91.9,274.7L88.1,272.2L87.6,265.6L90.0,254.7L89.1,248.1L87.6,240.9L79.5,224.3L77.6,212.4L81.9,205.6L81.4,190.4L77.1,167.0L76.7,152.3L79.5,146.2L78.1,140.3L72.4,134.7L71.9,129.3L76.7,123.9L76.2,120.0L70.0,116.9L64.7,109.7L59.9,98.4L60.9,80.1L70.0,46.4L70.9,43.5L81.4,43.8L81.4,45.2L113.9,44.7L150.7,44.5L194.6,44.0L234.3,43.5L236.2,42.1L242.9,40.3L283.0,43.8L308.3,41.9L318.8,43.1L327.0,45.4L344.2,44.0L353.7,44.7L360.4,53.2L363.3,53.2L367.1,49.6L374.2,45.4L381.4,42.4L386.7,35.8L389.5,30.6L394.3,31.8L400.5,31.3L405.3,27.1L406.7,20.8Z"></path>
+<ellipse class="tm-zone tm-zone-hot" cx="351.1" cy="171.5" rx="108" ry="74"></ellipse>
+<ellipse class="tm-zone tm-zone-hot" cx="433.3" cy="453.6" rx="72" ry="100"></ellipse>
+<ellipse class="tm-zone tm-zone-warn" cx="428" cy="749" rx="92" ry="48"></ellipse>
+<path class="tm-lake" d="M453.2,676.9L458.6,640.9L454.6,600.8L459.9,567.4L454.6,534.0L465.2,500.5L473.1,467.0L469.2,440.2L462.5,413.4L453.2,386.6L438.6,363.8L425.4,350.4L414.8,358.4L420.1,382.6L409.5,400.0L396.2,420.1L401.5,446.9L412.1,476.4L420.1,507.2L426.7,540.6L430.7,578.1L437.3,618.2L444.0,654.2L453.2,676.9Z"></path>
+<path class="tm-arm" d="M461.2,417.4L478.5,390.6L494.4,363.8L501.0,350.4"></path>
+<path class="tm-arm" d="M417.4,371.8L388.2,353.1L359.0,334.3L332.5,318.1L313.9,306.1"></path>
+<path class="tm-route" d="M335.2,259.0 Q428.7,375.6 491.7,511.2" marker-end="url(#gh-arrow)"></path>
+<path class="tm-route" d="M335.2,259.0 Q287.0,335.3 284.7,425.5" marker-end="url(#gh-arrow)"></path>
+<path class="tm-route" d="M284.7,425.5 Q410.6,573.5 421.4,767.6" marker-end="url(#gh-arrow)"></path>
+<path class="tm-route" d="M491.7,511.2 Q427.6,631.5 421.4,767.6" marker-end="url(#gh-arrow)"></path>
+<text class="tm-cname" x="181.2" y="158">GHANA</text>
+<text class="tm-lakelbl" x="316.6" y="543.3">Volta<tspan dy="15" x="316.6">Lake</tspan></text>
+<g class="tm-compass" transform="translate(564,52)">
+<text class="tm-n" x="0" y="0">N</text>
+<path d="M0,10 V38 M0,10 L-5,18 M0,10 L5,18"></path>
+</g>
+</svg>
+<button aria-label="Trafficking hotspot: Northern source zone. Primary recruitment area. Poverty and school dropout drive the placement of children with lake fishing crews." class="tm-mk tm-spot tm-lab-r tm-card-r" style="left:60.26%;top:16.81%" type="button">
+<svg aria-hidden="true" class="tm-tri" viewbox="0 0 24 21"><path d="M12 1 23 20H1Z"></path></svg><span class="tm-lab tm-lab-hot">Northern<br/>source zone</span>
+<span class="tm-card"><span class="tm-card-title">Northern source zone</span><span class="tm-card-note">Primary recruitment area. Poverty and school dropout drive the placement of children with lake fishing crews.</span></span>
+</button>
+<button aria-label="Trafficking hotspot: Volta basin hotspot. Highest concentration of child labour on Lake Volta — boys used for net diving, girls for processing and domestic work." class="tm-mk tm-spot tm-lab-r tm-card-l" style="left:79.31%;top:56.80%" type="button">
+<svg aria-hidden="true" class="tm-tri" viewbox="0 0 24 21"><path d="M12 1 23 20H1Z"></path></svg><span class="tm-lab tm-lab-hot">Volta basin<br/>hotspot</span>
+<span class="tm-card"><span class="tm-card-title">Volta basin hotspot</span><span class="tm-card-note">Highest concentration of child labour on Lake Volta — boys used for net diving, girls for processing and domestic work.</span></span>
+</button>
+<button aria-label="Trafficking hotspot: Yeji crossing. Ferry crossing used to move children between the northern regions and the lake islands." class="tm-mk tm-spot tm-lab-l tm-card-r" style="left:45.92%;top:47.28%" type="button">
+<svg aria-hidden="true" class="tm-tri" viewbox="0 0 24 21"><path d="M12 1 23 20H1Z"></path></svg><span class="tm-lab tm-lab-hot">Yeji<br/>crossing</span>
+<span class="tm-card"><span class="tm-card-title">Yeji crossing</span><span class="tm-card-note">Ferry crossing used to move children between the northern regions and the lake islands.</span></span>
+</button>
+<button aria-label="Trafficking hotspot: Accra–Tema corridor. Onward movement to other West African cities and, in a minority of cases, overseas." class="tm-mk tm-spot tm-lab-r tm-card-l" style="left:76.74%;top:78.92%" type="button">
+<svg aria-hidden="true" class="tm-tri" viewbox="0 0 24 21"><path d="M12 1 23 20H1Z"></path></svg><span class="tm-lab tm-lab-hot">Coastal<br/>transit</span>
+<span class="tm-card"><span class="tm-card-title">Accra–Tema corridor</span><span class="tm-card-note">Onward movement to other West African cities and, in a minority of cases, overseas.</span></span>
+</button>
+<button aria-label="Tamale. Children rescued ~40. Northern intake and family reintegration centre. Case screening and school re-entry support." class="tm-mk tm-site tm-lab-r tm-card-r" style="left:54.06%;top:28.78%" type="button">
+<span class="tm-halo"></span><span class="tm-dot"></span><span class="tm-lab">Tamale</span>
+<span class="tm-card"><span class="tm-card-title">Tamale</span><span class="tm-card-stat">Children rescued: ~40</span><span class="tm-card-note">Northern intake and family reintegration centre. Case screening and school re-entry support.</span></span>
+</button>
+<button aria-label="Yeji — Volta ferry. Children rescued ~62. Interception point on the lake crossing. Joint patrols with district social welfare." class="tm-mk tm-site tm-lab-r tm-card-r" style="left:57.90%;top:46.38%" type="button">
+<span class="tm-halo"></span><span class="tm-dot"></span><span class="tm-lab">Yeji</span>
+<span class="tm-card"><span class="tm-card-title">Yeji — Volta ferry</span><span class="tm-card-stat">Children rescued: ~62</span><span class="tm-card-note">Interception point on the lake crossing. Joint patrols with district social welfare.</span></span>
+</button>
+<button aria-label="Kete Krachi — Volta Lake. Children rescued ~85. Key lake fishing trafficking zone. Active RTBF rescue and interception operations." class="tm-mk tm-site tm-lab-r tm-card-l" style="left:70.74%;top:52.93%" type="button">
+<span class="tm-halo"></span><span class="tm-dot"></span><span class="tm-lab">Kete Krachi</span>
+<span class="tm-card"><span class="tm-card-title">Kete Krachi — Volta Lake</span><span class="tm-card-stat">Children rescued: ~85</span><span class="tm-card-note">Key lake fishing trafficking zone. Active RTBF rescue and interception operations.</span></span>
+</button>
+<button aria-label="Kumasi. Children rescued ~31. Transit city casework, survivor aftercare, and vocational placement." class="tm-mk tm-site tm-lab-l tm-card-r" style="left:37.37%;top:69.13%" type="button">
+<span class="tm-halo"></span><span class="tm-dot"></span><span class="tm-lab">Kumasi</span>
+<span class="tm-card"><span class="tm-card-title">Kumasi</span><span class="tm-card-stat">Children rescued: ~31</span><span class="tm-card-note">Transit city casework, survivor aftercare, and vocational placement.</span></span>
+</button>
+<button aria-label="Accra. Children rescued ~74. National office. Legal representation, repatriation support, and policy advocacy." class="tm-mk tm-site tm-lab-l tm-card-l" style="left:67.97%;top:85.29%" type="button">
+<span class="tm-halo"></span><span class="tm-dot"></span><span class="tm-lab">Accra</span>
+<span class="tm-card"><span class="tm-card-title">Accra</span><span class="tm-card-stat">Children rescued: ~74</span><span class="tm-card-note">National office. Legal representation, repatriation support, and policy advocacy.</span></span>
+</button>
+<button aria-label="Takoradi. Children rescued ~18. Coastal fishing community outreach and prevention programming." class="tm-mk tm-site tm-lab-l tm-card-r" style="left:34.37%;top:95.37%" type="button">
+<span class="tm-halo"></span><span class="tm-dot"></span><span class="tm-lab">Takoradi</span>
+<span class="tm-card"><span class="tm-card-title">Takoradi</span><span class="tm-card-stat">Children rescued: ~18</span><span class="tm-card-note">Coastal fishing community outreach and prevention programming.</span></span>
+</button>
+</div>
+</div>
+<div class="tm-panel tm-p2">
+<div class="tm-stage tm-stage-wa" style="--vbw:1150;--vbh:700">
+<svg aria-label="Map" class="tm-svg" role="img" viewbox="0 0 1150 700">
+<defs>
+<marker id="wa-arrow" markerheight="5.5" markerwidth="5.5" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10">
+<path d="M0,0 L10,5 L0,10 Z" fill="#bf3624" opacity=".85"></path>
+</marker>
+</defs>
+<path class="tm-land tm-land-focus" d="M631.2,311.8L627.6,327.7L648.5,353.9L648.3,390.8L653.1,430.7L665.5,449.1L654.6,494.6L658.5,519.6L671.9,551.6L683.0,569.2L604.5,598.6L576.8,615.9L531.8,630.4L487.2,616.1L489.5,596.3L467.7,553.0L480.9,496.2L501.9,453.8L488.6,381.8L481.8,343.6L483.0,314.7L569.8,312.3L591.9,316.1L608.1,307.8Z"></path>
+<path class="tm-land" d="M674.9,312.9L668.6,339.7L683.9,354.7L701.2,372.5L703.2,397.4L713.3,407.8L710.9,523.8L723.3,558.5L683.0,569.2L671.9,551.6L658.5,519.6L654.6,494.6L665.5,449.1L653.1,430.7L648.3,390.8L648.5,353.9L627.6,327.7L631.2,311.8Z"></path>
+<path class="tm-land" d="M764.6,552.6L723.3,558.5L710.9,523.8L713.3,407.8L703.2,397.4L701.2,372.5L683.9,354.7L668.6,339.7L674.9,312.9L692.2,307.2L702.3,284.9L726.8,280.1L737.7,264.8L754.5,249.9L772.5,249.7L810.6,279.1L808.7,296.1L819.8,326.3L810.1,346.8L815.3,360.5L791.0,391.9L775.5,407.4L766.2,439.3L767.4,471.4Z"></path>
+<path class="tm-land" d="M764.6,552.6L767.4,471.4L766.2,439.3L775.5,407.4L791.0,391.9L815.3,360.5L810.1,346.8L819.8,326.3L808.7,296.1L810.6,279.1L814.1,233.5L828.5,212.8L835.5,183.3L848.4,172.1L902.1,166.0L952.3,185.3L971.0,204.7L996.6,205.6L1020.2,192.9L1080.8,219.4L1106.2,218.2L1135.7,196.3L1165.1,197.9L1179.5,190.7L1206.5,193.6L1245.2,208.7L1284.2,179.9L1295.9,182.0L1329.8,238.2L1339.1,237.1L1358.9,257.4L1353.3,266.7L1350.8,283.6L1308.7,323.0L1295.4,355.5L1288.4,381.8L1277.7,393.2L1267.7,428.7L1241.0,449.4L1233.3,475.0L1221.9,495.3L1217.3,516.3L1182.9,533.3L1154.8,512.6L1135.9,513.4L1106.2,542.8L1091.6,543.3L1067.9,591.8L1055.1,627.3L1003.1,645.4L984.2,642.8L964.9,654.0L924.9,652.9L898.1,621.5L881.7,585.2L846.3,552.1L808.7,552.7Z"></path>
+<path class="tm-land" d="M359.7,344.8L356.5,315.3L370.2,293.7L368.9,276.4L408.7,234.0L416.1,198.9L429.7,186.3L453.9,193.2L474.7,182.8L481.6,169.5L520.5,146.4L530.0,130.3L576.6,108.8L604.2,101.4L616.8,111.4L648.8,111.2L644.9,136.2L651.5,159.7L679.6,193.3L681.2,218.1L738.8,229.8L737.7,264.8L726.8,280.1L702.3,284.9L692.2,307.2L674.9,312.9L631.2,311.8L608.1,307.8L591.9,316.1L569.8,312.3L483.0,314.7L481.8,343.6L488.6,381.8L454.4,368.7L431.0,370.6L413.5,383.4L391.0,372.7L382.2,355.9Z"></path>
+<path class="tm-land" d="M228.5,353.2L235.0,348.5L248.8,356.2L287.5,356.6L296.7,341.8L305.4,342.7L319.8,337.0L327.5,358.7L339.2,352.4L359.7,344.8L382.2,355.9L391.0,372.7L413.5,383.4L431.0,370.6L454.4,368.7L488.6,381.8L501.9,453.8L480.9,496.2L467.7,553.0L489.5,596.3L487.2,616.1L464.5,616.7L429.6,606.9L397.5,607.5L338.3,616.2L303.6,630.7L254.1,649.1L244.3,647.8L248.3,606.4L253.0,600.2L251.5,580.3L230.3,559.3L214.5,555.9L199.9,542.1L210.7,519.8L205.6,495.4L208.0,480.7L215.9,480.7L219.0,458.7L215.0,448.9L219.9,441.9L238.4,435.8L226.0,395.3L214.5,374.3L218.6,357.1Z"></path>
+<path class="tm-land" d="M54.3,239.1L56.6,223.2L52.3,203.3L33.6,188.9L23.8,159.4L21.5,127.3L38.2,117.9L46.7,87.4L62.5,86.2L97.5,100.7L125.7,90.4L145.0,93.8L152.5,82.3L353.1,81.5L364.2,45.1L355.6,38.7L331.5,-188.9L307.3,-423.1L383.8,-424.0L552.5,-304.7L721.2,-187.3L733.1,-162.3L764.2,-147.1L787.4,-138.4L788.0,-104.7L843.4,-109.9L843.6,11.2L816.2,46.0L811.9,78.0L767.4,86.3L699.2,90.7L680.9,109.2L648.8,111.2L616.8,111.4L604.2,101.4L576.6,108.8L530.0,130.3L520.5,146.4L481.6,169.5L474.7,182.8L453.9,193.2L429.7,186.3L416.1,198.9L408.7,234.0L368.9,276.4L370.2,293.7L356.5,315.3L359.7,344.8L339.2,352.4L327.5,358.7L319.8,337.0L305.4,342.7L296.7,341.8L287.5,356.6L248.8,356.2L235.0,348.5L228.5,353.2L213.2,338.5L215.9,323.4L209.6,317.4L199.0,322.4L201.0,305.9L211.2,292.8L190.7,271.3L184.8,257.2L173.6,246.0L163.7,244.7L151.6,251.9L135.4,258.7L121.8,269.8L100.3,265.6L86.5,252.6L78.2,251.0L65.1,257.8L57.1,257.8Z"></path>
+<path class="tm-land" d="M1372.6,-308.6L1384.8,-224.6L1403.6,-210.8L1404.3,-193.7L1425.2,-175.4L1414.4,-152.5L1395.1,-45.2L1392.4,23.0L1328.7,72.0L1307.1,140.2L1327.8,159.3L1327.8,192.4L1359.8,193.6L1354.8,217.8L1340.7,220.7L1339.1,237.1L1329.8,238.2L1295.9,182.0L1284.2,179.9L1245.2,208.7L1206.5,193.6L1179.5,190.7L1165.1,197.9L1135.7,196.3L1106.2,218.2L1080.8,219.4L1020.2,192.9L996.6,205.6L971.0,204.7L952.3,185.3L902.1,166.0L848.4,172.1L835.5,183.3L828.5,212.8L814.1,233.5L810.6,279.1L772.5,249.7L754.5,249.9L737.7,264.8L738.8,229.8L681.2,218.1L679.6,193.3L651.5,159.7L644.9,136.2L648.8,111.2L680.9,109.2L699.2,90.7L767.4,86.3L811.9,78.0L816.2,46.0L843.6,11.2L843.4,-109.9L914.0,-133.5L1058.7,-238.5L1230.0,-341.6L1309.1,-318.1L1337.1,-288.4Z"></path>
+<path class="tm-land" d="M-205.7,180.0L-226.4,139.9L-251.2,121.5L-229.2,111.7L-205.1,75.3L-193.2,48.5L-176.0,31.9L-151.1,36.4L-126.8,25.0L-98.9,24.5L-75.0,39.7L-41.9,53.6L-11.6,91.8L21.5,127.3L23.8,159.4L33.6,188.9L52.3,203.3L56.6,223.2L54.3,239.1L47.1,242.0L19.9,237.9L16.1,243.6L5.1,244.8L-30.9,232.3L-55.0,231.8L-147.3,229.6L-160.8,235.4L-177.4,233.8L-203.9,242.1L-212.1,202.8L-166.6,203.9L-154.5,196.7L-145.5,196.3L-127.0,184.4L-105.6,195.2L-83.8,196.2L-62.2,184.6L-72.3,169.8L-88.8,178.4L-104.3,178.2L-124.1,165.5L-140.0,166.3L-151.3,178.5Z"></path>
+<path class="tm-land" d="M-55.0,231.8L-30.9,232.3L5.1,244.8L16.1,243.6L19.9,237.9L47.1,242.0L54.3,239.1L57.1,257.8L65.1,257.8L78.2,251.0L86.5,252.6L100.3,265.6L121.8,269.8L135.4,258.7L151.6,251.9L163.7,244.7L173.6,246.0L184.8,257.2L190.7,271.3L211.2,292.8L201.0,305.9L199.0,322.4L209.6,317.4L215.9,323.4L213.2,338.5L228.5,353.2L218.6,357.1L214.5,374.3L226.0,395.3L238.4,435.8L219.9,441.9L215.0,448.9L219.0,458.7L215.9,480.7L208.0,480.7L193.9,479.4L183.7,499.8L169.6,499.5L159.7,488.8L163.2,468.5L142.3,437.6L129.1,443.3L118.5,444.4L104.7,447.3L105.2,428.7L97.3,415.5L98.9,400.8L88.1,379.4L74.1,361.3L34.1,361.2L22.4,370.9L8.7,372.0L0.1,383.0L-5.7,397.0L-32.3,419.2L-54.3,389.3L-73.7,369.4L-86.5,362.9L-98.9,352.7L-104.7,330.3L-112.1,319.1L-126.5,310.7L-104.3,285.9L-89.2,286.8L-76.1,278.2L-65.1,278.2L-57.2,271.4L-61.5,254.5L-55.9,249.1Z"></path>
+<path class="tm-land" d="M-32.3,419.2L-5.7,397.0L0.1,383.0L8.7,372.0L22.4,370.9L34.1,361.2L74.1,361.3L88.1,379.4L98.9,400.8L97.3,415.5L105.2,428.7L104.7,447.3L118.5,444.4L95.3,468L72.6,495.3L69.9,510.0L58.0,526.1L44.5,522.4L8.5,502.1L-17.4,475.1L-26.2,456.6Z"></path>
+<path class="tm-land" d="M208.0,480.7L205.6,495.4L210.7,519.8L199.9,542.1L214.5,555.9L230.3,559.3L251.5,580.3L253.0,600.2L248.3,606.4L244.3,647.8L231.2,648.2L179.7,624.3L134.4,586.1L91.7,558.6L58.0,526.1L69.9,510.0L72.6,495.3L95.3,468L118.5,444.4L129.1,443.3L142.3,437.6L163.2,468.5L159.7,488.8L169.6,499.5L183.7,499.8L193.9,479.4Z"></path>
+<path class="tm-land" d="M-205.7,180.0L-151.3,178.5L-140.0,166.3L-124.1,165.5L-104.3,178.2L-88.8,178.4L-72.3,169.8L-62.2,184.6L-83.8,196.2L-105.6,195.2L-127.0,184.4L-145.5,196.3L-154.5,196.7L-166.6,203.9L-212.1,202.8Z"></path>
+<path class="tm-land" d="M-203.9,242.1L-177.4,233.8L-160.8,235.4L-147.3,229.6L-55.0,231.8L-55.9,249.1L-61.5,254.5L-57.2,271.4L-65.1,278.2L-76.1,278.2L-89.2,286.8L-104.3,285.9L-126.5,310.7L-153.3,289.4L-174.3,286.0L-185.7,271.7L-185.5,263.9L-200.6,253.1Z"></path>
+<path class="tm-land" d="M-223.1,-208.1L-212.3,-226.0L-16.5,-225.6L-26.0,-303.5L-13.8,-331.5L33.2,-336.4L31.6,-477.2L195.6,-474.3L195.7,-559.0L290.8,-491.8L383.8,-424.0L307.3,-423.1L331.5,-188.9L355.6,38.7L364.2,45.1L353.1,81.5L152.5,82.3L145.0,93.8L125.7,90.4L97.5,100.7L62.5,86.2L46.7,87.4L38.2,117.9L21.5,127.3L-11.6,91.8L-41.9,53.6L-75.0,39.7L-98.9,24.5L-126.8,25.0L-151.1,36.4L-176.0,31.9L-193.2,48.5L-197.6,20.5L-183.5,-5.3L-177.4,-54.7L-182.8,-106.8L-188.9,-133.1L-183.9,-159.7L-196.8,-185.0Z"></path>
+<path class="tm-land" d="M1821.9,-132.4L1824.4,75.8L1781.2,72.2L1758.3,110.4L1745.2,142.3L1755.6,154.4L1739.1,170.1L1744.8,191.5L1731.9,212.8L1726.8,231.7L1744.5,228.7L1754.9,248.5L1755.5,278.2L1773.8,293.2L1773.3,305.5L1741.6,314.2L1716.2,334.8L1680.0,390.3L1633.1,413.7L1584.6,410.6L1570.6,415.2L1575.6,433.0L1549.5,450.7L1528.3,470.4L1465.3,489.7L1452.9,478.3L1444.6,477.3L1435.2,490.3L1394.0,494.0L1401.8,480.4L1386.1,445.6L1379.1,424.6L1357.3,416.1L1327.8,386.5L1338.6,362.5L1361.4,367.7L1375.5,364.1L1403.4,364.6L1376.2,318.4L1378.0,284.5L1374.8,250.6L1354.8,217.8L1359.8,193.6L1327.8,192.4L1327.8,159.3L1307.1,140.2L1328.7,72.0L1392.4,23.0L1395.1,-45.2L1414.4,-152.5L1425.2,-175.4L1404.3,-193.7L1403.6,-210.8L1384.8,-224.6L1372.6,-308.6L1423.0,-338.3L1523.4,-287.0L1622.4,-234.6Z"></path>
+<path class="tm-land" d="M1354.8,217.8L1374.8,250.6L1378.0,284.5L1376.2,318.4L1403.4,364.6L1375.5,364.1L1361.4,367.7L1338.6,362.5L1327.8,386.5L1357.3,416.1L1379.1,424.6L1386.1,445.6L1401.8,480.4L1394.0,494.0L1368.8,545.1L1356.8,554.2L1353.0,593.2L1358.0,614.3L1353.9,629.3L1377.6,655.5L1381.8,673.5L1400.3,699.4L1423.2,715.5L1425.3,738.3L1430.6,752.8L1427.0,779.8L1387.4,768.0L1346.9,754.8L1283.9,752.8L1277.6,750.1L1248.0,756.6L1217.6,749.9L1193.9,753.1L1112.5,752.0L1119.7,712.5L1100.3,679.4L1077.4,670.9L1067.3,648.4L1054.4,641.2L1055.1,627.3L1067.9,591.8L1091.6,543.3L1106.2,542.8L1135.9,513.4L1154.8,512.6L1182.9,533.3L1217.3,516.3L1221.9,495.3L1233.3,475.0L1241.0,449.4L1267.7,428.7L1277.7,393.2L1288.4,381.8L1295.4,355.5L1308.7,323.0L1350.8,283.6L1353.3,266.7L1358.9,257.4L1339.1,237.1L1340.7,220.7Z"></path>
+<ellipse class="tm-zone tm-zone-hot" cx="622.5" cy="454.8" rx="60" ry="72"></ellipse>
+<ellipse class="tm-zone tm-zone-hot" cx="630" cy="205.4" rx="120" ry="58"></ellipse>
+<ellipse class="tm-zone tm-zone-warn" cx="695" cy="580.7" rx="130" ry="42"></ellipse>
+<path class="tm-route" d="M230.0,228.5 Q435.1,181.9 645.0,195.2" marker-end="url(#wa-arrow)"></path>
+<path class="tm-route" d="M645.0,195.2 Q604.2,318.1 615.0,447.2" marker-end="url(#wa-arrow)"></path>
+<path class="tm-route" d="M645.0,195.2 Q764.0,348.6 799.0,539.5" marker-end="url(#wa-arrow)"></path>
+<path class="tm-route" d="M615.0,447.2 Q672.5,542.3 760.0,610.9" marker-end="url(#wa-arrow)"></path>
+<path class="tm-route" d="M429.0,598.3 Q525.9,610.0 620.5,585.8" marker-end="url(#wa-arrow)"></path>
+<text class="tm-cname tm-cname-sm tm-cname-focus" x="537.5" y="520.4">GHANA</text>
+<text class="tm-cname tm-cname-sm" x="990" y="404.2">NIGERIA</text>
+<text class="tm-cname tm-cname-sm" x="405" y="34.8">MALI</text>
+<text class="tm-cname tm-cname-sm" x="1060" y="40">NIGER</text>
+<text class="tm-cname tm-cname-sm" x="500" y="231.1">BURKINA FASO</text>
+<text class="tm-cname tm-cname-sm" x="335" y="505.3">CÔTE D'IVOIRE</text>
+<text class="tm-cname tm-cname-sm" x="-100" y="107.5">SENEGAL</text>
+<text class="tm-cname tm-cname-sm" x="70" y="343.3">GUINEA</text>
+<text class="tm-cname tm-cname-sm" x="752.5" y="373.8">BENIN</text>
+<text class="tm-cname tm-cname-sm" x="682.5" y="500.2">TOGO</text>
+<text class="tm-cname tm-cname-sm" x="1430" y="159.1">CHAD</text>
+<text class="tm-cname tm-cname-sm" x="1250" y="585.8">CAMEROON</text>
+<text class="tm-cname tm-cname-sm" x="120" y="-122.9">MAURITANIA</text>
+<text class="tm-cname tm-cname-sm" x="160" y="550.6">LIBERIA</text>
+<text class="tm-cname tm-cname-sm" x="35" y="439.6">SIERRA LEONE</text>
+</svg>
+<button aria-label="Trafficking hotspot: Volta Basin. Lake Volta child fishing labour — the densest concentration of cases in the region." class="tm-mk tm-spot tm-lab-l tm-card-r" style="left:53.48%;top:63.89%" type="button">
+<svg aria-hidden="true" class="tm-tri" viewbox="0 0 24 21"><path d="M12 1 23 20H1Z"></path></svg><span class="tm-lab tm-lab-hot">Volta<br/>Basin</span>
+<span class="tm-card"><span class="tm-card-title">Volta Basin</span><span class="tm-card-note">Lake Volta child fishing labour — the densest concentration of cases in the region.</span></span>
+</button>
+<button aria-label="Trafficking hotspot: Sahel corridor. Overland movement south from Burkina Faso, Mali, and Niger toward the coastal cities." class="tm-mk tm-spot tm-lab-r tm-card-r" style="left:56.09%;top:27.89%" type="button">
+<svg aria-hidden="true" class="tm-tri" viewbox="0 0 24 21"><path d="M12 1 23 20H1Z"></path></svg><span class="tm-lab tm-lab-hot">Sahel<br/>corridor</span>
+<span class="tm-card"><span class="tm-card-title">Sahel corridor</span><span class="tm-card-note">Overland movement south from Burkina Faso, Mali, and Niger toward the coastal cities.</span></span>
+</button>
+<button aria-label="Trafficking hotspot: Gulf of Guinea corridor. Coastal road and sea routes linking Accra, Lomé, Cotonou, and Lagos." class="tm-mk tm-spot tm-lab-r tm-card-l" style="left:66.09%;top:87.27%" type="button">
+<svg aria-hidden="true" class="tm-tri" viewbox="0 0 24 21"><path d="M12 1 23 20H1Z"></path></svg><span class="tm-lab tm-lab-hot">Gulf of Guinea<br/>corridor</span>
+<span class="tm-card"><span class="tm-card-title">Gulf of Guinea corridor</span><span class="tm-card-note">Coastal road and sea routes linking Accra, Lomé, Cotonou, and Lagos.</span></span>
+</button>
+<button aria-label="Accra, Ghana. Children rescued ~74. Regional headquarters. Coordinates casework across the Gulf of Guinea." class="tm-mk tm-site tm-lab-l tm-card-l" style="left:53.96%;top:83.69%" type="button">
+<span class="tm-halo"></span><span class="tm-dot"></span><span class="tm-lab">Accra</span>
+<span class="tm-card"><span class="tm-card-title">Accra, Ghana</span><span class="tm-card-stat">Children rescued: ~74</span><span class="tm-card-note">Regional headquarters. Coordinates casework across the Gulf of Guinea.</span></span>
+</button>
+<button aria-label="Tamale, Ghana. Children rescued ~40. Northern field office covering the Sahel-facing source regions." class="tm-mk tm-site tm-lab-l tm-card-l" style="left:51.13%;top:56.30%" type="button">
+<span class="tm-halo"></span><span class="tm-dot"></span><span class="tm-lab">Tamale</span>
+<span class="tm-card"><span class="tm-card-title">Tamale, Ghana</span><span class="tm-card-stat">Children rescued: ~40</span><span class="tm-card-note">Northern field office covering the Sahel-facing source regions.</span></span>
+</button>
+<button aria-label="Abidjan, Côte d'Ivoire. Children rescued ~29. Partner-run shelter and cross-border family tracing." class="tm-mk tm-site tm-lab-l tm-card-r" style="left:37.30%;top:85.47%" type="button">
+<span class="tm-halo"></span><span class="tm-dot"></span><span class="tm-lab">Abidjan</span>
+<span class="tm-card"><span class="tm-card-title">Abidjan, Côte d'Ivoire</span><span class="tm-card-stat">Children rescued: ~29</span><span class="tm-card-note">Partner-run shelter and cross-border family tracing.</span></span>
+</button>
+<button aria-label="Lagos, Nigeria. Children rescued ~46. Destination-city referrals and repatriation coordination." class="tm-mk tm-site tm-lab-r tm-card-l" style="left:69.48%;top:77.07%" type="button">
+<span class="tm-halo"></span><span class="tm-dot"></span><span class="tm-lab">Lagos</span>
+<span class="tm-card"><span class="tm-card-title">Lagos, Nigeria</span><span class="tm-card-stat">Children rescued: ~46</span><span class="tm-card-note">Destination-city referrals and repatriation coordination.</span></span>
+</button>
+<button aria-label="Ouagadougou, Burkina Faso. Children rescued ~22. Sahel corridor monitoring and prevention outreach." class="tm-mk tm-site tm-lab-l tm-card-r" style="left:48.13%;top:34.69%" type="button">
+<span class="tm-halo"></span><span class="tm-dot"></span><span class="tm-lab">Ouagadougou</span>
+<span class="tm-card"><span class="tm-card-title">Ouagadougou, Burkina Faso</span><span class="tm-card-stat">Children rescued: ~22</span><span class="tm-card-note">Sahel corridor monitoring and prevention outreach.</span></span>
+</button>
+<button aria-label="Bamako, Mali. Children rescued ~15. Referral partner for children moved along the western corridor." class="tm-mk tm-site tm-lab-l tm-card-r" style="left:20.00%;top:32.64%" type="button">
+<span class="tm-halo"></span><span class="tm-dot"></span><span class="tm-lab">Bamako</span>
+<span class="tm-card"><span class="tm-card-title">Bamako, Mali</span><span class="tm-card-stat">Children rescued: ~15</span><span class="tm-card-note">Referral partner for children moved along the western corridor.</span></span>
+</button>
+</div>
+</div>
+</div>
+<div class="tm-legend">
+<span class="tm-li"><span class="tm-sw tm-sw-site"></span>Rescue &amp; response site</span>
+<span class="tm-li"><span class="tm-sw tm-sw-spot"></span>Trafficking hotspot</span>
+<span class="tm-li"><span class="tm-sw tm-sw-route"></span>Known movement route</span>
+<span class="tm-li"><span class="tm-sw tm-sw-zone"></span>Concentration zone</span>
+</div>
+<details class="tm-details">
+<summary>View every location as a list</summary>
+<div class="tm-tw">
+<table>
+<thead><tr><th>View</th><th>Type</th><th>Location</th><th class="num">Children rescued</th><th>Detail</th></tr></thead>
+<tbody>
+<tr><td>Ghana</td><td><span class="tm-key tm-key-site"></span>Response site</td><td>Tamale</td><td class="num">~40</td><td>Northern intake and family reintegration centre. Case screening and school re-entry support.</td></tr>
+<tr><td>Ghana</td><td><span class="tm-key tm-key-site"></span>Response site</td><td>Yeji — Volta ferry</td><td class="num">~62</td><td>Interception point on the lake crossing. Joint patrols with district social welfare.</td></tr>
+<tr><td>Ghana</td><td><span class="tm-key tm-key-site"></span>Response site</td><td>Kete Krachi — Volta Lake</td><td class="num">~85</td><td>Key lake fishing trafficking zone. Active RTBF rescue and interception operations.</td></tr>
+<tr><td>Ghana</td><td><span class="tm-key tm-key-site"></span>Response site</td><td>Kumasi</td><td class="num">~31</td><td>Transit city casework, survivor aftercare, and vocational placement.</td></tr>
+<tr><td>Ghana</td><td><span class="tm-key tm-key-site"></span>Response site</td><td>Accra</td><td class="num">~74</td><td>National office. Legal representation, repatriation support, and policy advocacy.</td></tr>
+<tr><td>Ghana</td><td><span class="tm-key tm-key-site"></span>Response site</td><td>Takoradi</td><td class="num">~18</td><td>Coastal fishing community outreach and prevention programming.</td></tr>
+<tr><td>Ghana</td><td><span class="tm-key tm-key-spot"></span>Hotspot</td><td>Northern source zone</td><td class="num">—</td><td>Primary recruitment area. Poverty and school dropout drive the placement of children with lake fishing crews.</td></tr>
+<tr><td>Ghana</td><td><span class="tm-key tm-key-spot"></span>Hotspot</td><td>Volta basin hotspot</td><td class="num">—</td><td>Highest concentration of child labour on Lake Volta — boys used for net diving, girls for processing and domestic work.</td></tr>
+<tr><td>Ghana</td><td><span class="tm-key tm-key-spot"></span>Hotspot</td><td>Yeji crossing</td><td class="num">—</td><td>Ferry crossing used to move children between the northern regions and the lake islands.</td></tr>
+<tr><td>Ghana</td><td><span class="tm-key tm-key-spot"></span>Hotspot</td><td>Accra–Tema corridor</td><td class="num">—</td><td>Onward movement to other West African cities and, in a minority of cases, overseas.</td></tr>
+<tr><td>West Africa</td><td><span class="tm-key tm-key-site"></span>Response site</td><td>Accra, Ghana</td><td class="num">~74</td><td>Regional headquarters. Coordinates casework across the Gulf of Guinea.</td></tr>
+<tr><td>West Africa</td><td><span class="tm-key tm-key-site"></span>Response site</td><td>Tamale, Ghana</td><td class="num">~40</td><td>Northern field office covering the Sahel-facing source regions.</td></tr>
+<tr><td>West Africa</td><td><span class="tm-key tm-key-site"></span>Response site</td><td>Abidjan, Côte d'Ivoire</td><td class="num">~29</td><td>Partner-run shelter and cross-border family tracing.</td></tr>
+<tr><td>West Africa</td><td><span class="tm-key tm-key-site"></span>Response site</td><td>Lagos, Nigeria</td><td class="num">~46</td><td>Destination-city referrals and repatriation coordination.</td></tr>
+<tr><td>West Africa</td><td><span class="tm-key tm-key-site"></span>Response site</td><td>Ouagadougou, Burkina Faso</td><td class="num">~22</td><td>Sahel corridor monitoring and prevention outreach.</td></tr>
+<tr><td>West Africa</td><td><span class="tm-key tm-key-site"></span>Response site</td><td>Bamako, Mali</td><td class="num">~15</td><td>Referral partner for children moved along the western corridor.</td></tr>
+<tr><td>West Africa</td><td><span class="tm-key tm-key-spot"></span>Hotspot</td><td>Volta Basin</td><td class="num">—</td><td>Lake Volta child fishing labour — the densest concentration of cases in the region.</td></tr>
+<tr><td>West Africa</td><td><span class="tm-key tm-key-spot"></span>Hotspot</td><td>Sahel corridor</td><td class="num">—</td><td>Overland movement south from Burkina Faso, Mali, and Niger toward the coastal cities.</td></tr>
+<tr><td>West Africa</td><td><span class="tm-key tm-key-spot"></span>Hotspot</td><td>Gulf of Guinea corridor</td><td class="num">—</td><td>Coastal road and sea routes linking Accra, Lomé, Cotonou, and Lagos.</td></tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+<style class="transform-vars">
+    .fe-block-yui_3_17_2_1_1787133837802_11687 {
+      --opacity: 100%;
+      --translate-x: 0px;
+      --translate-y: 0px;
+      --rotation: 0deg;
+      --scale-x: 100%;
+      --scale-y: 100%;
+      --skew-x: 0deg;
+      --skew-y: 0deg;
+      --origin-x: 50%;
+      --origin-y: 50%;
+      --block-transform: none;
+
+      opacity: var(--opacity, 1);
+      transform: var(--block-transform);
+      transform-origin: var(--origin-x) var(--origin-y);
+    }
+  </style><style class="transform-overrides-vars">
+</style>
+
+    </div>
+  </div>
+</section>
+
+<section class="blue founder">
+  <div class="wrap founder-grid">
+    <div>
+      <p class="eyebrow">Our founder&rsquo;s story</p>
+      <h2 class="h-big gold">Eric Peasah</h2>
+      <p class="quote">&quot;There is no greater injustice than stealing a child&#x27;s freedom. There is no greater calling than restoring it.&quot;</p>
+      <p>Eric Peasah is a former staff member of the International Organization for Migration and a passionate advocate against modern slavery. With over 15 years of experience in rescuing children and bringing traffickers to justice across Ghana.</p><p>In Ghana and throughout Africa, Eric trains and works closely with Interpol, the Anti-Trafficking Unit of the Ghana Police Service, the Department of Social Welfare, the Ministry of Gender, Children and Social Protection, Ghana Immigration Service, the Anti-Human Trafficking Secretariat, law enforcement, anti-terrorism and security forces, NGO's, and inter-governmental organizations who seek his expertise, to influence policy and combat human trafficking in Ghana and the West African Sub-Saharan region. </p><p>He was a key advocate in establishing the Anti-Human Trafficking Unit of the Ghana Police Service and the Human Trafficking Act in Ghana. He has worked with the Somalian government to rescue young girls who were being trafficked into the sex trade in Yemen and Saudi Arabia and helped create a safe house for their protection. </p><p>His anti-trafficking efforts and achievements have been featured in the New York Times, Oprah Winfrey Show, ABC News, Thalassa TV in France, TV5 in Hungary, and the documentary film Not My Life. Eric serves on the National Diaspora Engagement Committee under the Ministry of Foreign Affairs and Regional Integration of Ghana and was appointed to the Anti-Human Trafficking Management Board by the Ministry of Gender, Children and Social Protection in Ghana on August 1, 2014, and was reappointed by the President of Ghana to serve a second term.</p>
+    </div>
+    <figure class="founder-photo"><img src="images/eric-peasah.jpg" alt="Eric Peasah, founder of Right To Be Free" loading="lazy"><figcaption>15+<br>years<br>fighting</figcaption></figure>
+  </div>
+</section>
+
+<section class="sky projects">
+  <div class="marquee" role="heading" aria-level="1" aria-label="Our ongoing projects"><div class="marquee-track" aria-hidden="true"><span>Our ongoing projects</span><span>Our ongoing projects</span><span>Our ongoing projects</span><span>Our ongoing projects</span><span>Our ongoing projects</span><span>Our ongoing projects</span></div></div>
+  <div class="wrap cards-3 proj-grid"><article class="proj"><img src="images/project-returnees.jpg" alt="RETURNEES PROJECT" loading="lazy"><h3>RETURNEES PROJECT</h3><p>This initiative is directed towards Ghanaian returnees, established under the ECOWAS-Ghana Joint Support Project on Persons of Concern. Right To Be Free, along with other supporting organizations, aims to support the reintegration of returnees through small business start-ups.</p><p><a href="https://gna.org.gh/2026/05/right-to-be-free-donates-popcorn-machines-to-ghanaian-returnees/" target="_blank" rel="noopener">Click here to learn more</a></p></article><article class="proj"><img src="images/project-ccmg.jpg" alt="CCMG" loading="lazy"><h3>CCMG</h3><p>The Coalition of Civil Society Organisations on Migration (CCMG) was launched on the 30th of October 2024 and stands for the end of the criminalization of migrants and for ensuring legal and safe migrant pathways. This coalition is made up of over thirty-four CSOs working in the area of Migration in Ghana, with Mr. Peasah working as the national coordinator.</p><p><a href="https://migrationnetwork.un.org/pledge/advocacy-plan-toward-ratification-au-free-movement-protocol-aufmp" target="_blank" rel="noopener">Click here to learn more</a></p></article><article class="proj"><img src="images/project-livelihood.jpg" alt="LIVELIHOOD PROJECT" loading="lazy"><h3>LIVELIHOOD PROJECT</h3><p>Ghana’s Livelihood Empowerment against Poverty (LEAP) programme began in 2008 and provides cash and health insurance to extremely poor households across Ghana to alleviate short-term poverty and encourage long-term human capital development. In 2015, LEAP 1000 was launched by extending programme eligibility to households with pregnant women and children under the age of 12 months.</p><p><a href="https://www.unicef.org/innocenti/reports/ghana-leap-1000-programme" target="_blank" rel="noopener">Click here to learn more</a></p></article></div>
+</section>
+
+<section class="news-wrap">
+
+<!-- IN THE NEWS carousel. To add an article: copy a <a class="rtbf-tile"> block and edit href, outlet, headline, date. -->
+<section class="rtbf-press">
+<div class="rtbf-press-inner">
+<div class="rtbf-press-head">
+<div>
+<span class="rtbf-eyebrow">As featured in</span>
+<h2 class="rtbf-press-title">In the News</h2>
+</div>
+<div class="rtbf-nav">
+<button aria-label="Previous articles" class="rtbf-arrow" disabled="" id="rtbfPrev" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M15 5l-7 7 7 7"></path></svg>
+</button>
+<button aria-label="More articles" class="rtbf-arrow" id="rtbfNext" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>
+</button>
+</div>
+</div>
+<div aria-label="Press coverage, scroll horizontally" class="rtbf-track" id="rtbfTrack" role="region" tabindex="0">
+<!-- ─────────── TILE ─────────── -->
+<a class="rtbf-tile" href="https://www.wbez.org/worldview/2014/10/16/global-activism-right-to-be-free-works-to-end-child-slavery-in-ghana" rel="noopener" style="--tint:#2f4a6b;--img:url('');" target="_blank">
+<div class="rtbf-tile-body">
+<span class="rtbf-outlet">WBEZ Chicago</span>
+<h3>Global Activism: Right To Be Free works to end child slavery in Ghana</h3>
+<span class="rtbf-date">16 October 2014 <em>Radio segment</em></span>
+</div>
+</a>
+<!-- ─────────── TILE ─────────── -->
+<a class="rtbf-tile" href="https://www.youtube.com/watch?v=7YxYm-i8Bg8" rel="noopener" style="--tint:#5c4a52;--img:url('');" target="_blank">
+<span aria-hidden="true" class="rtbf-play"><svg viewbox="0 0 24 24"><path d="M8 5l11 7-11 7z"></path></svg></span>
+<div class="rtbf-tile-body">
+<span class="rtbf-outlet">CGTN America</span>
+<h3>Eric Peasah discusses helping victims of human trafficking</h3>
+<span class="rtbf-date">Interview <em>Watch</em></span>
+</div>
+</a>
+<!-- ─────────── TILE ─────────── -->
+<a class="rtbf-tile" href="https://borgenproject.org/right-to-be-free/" rel="noopener" style="--tint:#6b5f4c;--img:url('');" target="_blank">
+<div class="rtbf-tile-body">
+<span class="rtbf-outlet">The Borgen Project</span>
+<h3>Right To Be Free addresses human trafficking in Ghana</h3>
+<span class="rtbf-date">8 August 2022</span>
+</div>
+</a>
+<!-- ─────────── TILE ─────────── -->
+<a class="rtbf-tile" href="https://www.endslaverynow.org/right-to-be-free" rel="noopener" style="--tint:#4a5a52;--img:url('');" target="_blank">
+<div class="rtbf-tile-body">
+<span class="rtbf-outlet">End Slavery Now</span>
+<h3>Funding the rescue and rehabilitation of trafficked children in Africa</h3>
+<span class="rtbf-date">Organisation profile</span>
+</div>
+</a>
+<!-- ─────────── TILE ─────────── -->
+<a class="rtbf-tile" href="https://www.modernghana.com/news/1366838/coalition-of-csos-on-migration-in-ghana-marks-inte.html" rel="noopener" style="--tint:#4d5668;--img:url('');" target="_blank">
+<div class="rtbf-tile-body">
+<span class="rtbf-outlet">Modern Ghana</span>
+<h3>Coalition of CSOs on Migration marks International Migrants Day</h3>
+<span class="rtbf-date">19 December 2024</span>
+</div>
+</a>
+<!-- ─────────── TILE ─────────── -->
+<a class="rtbf-tile" href="https://www.businessghana.com/site/news/general/343806/Let-s-not-see-migrants-as-others-Mr-Peasah" rel="noopener" style="--tint:#6a5450;--img:url('');" target="_blank">
+<div class="rtbf-tile-body">
+<span class="rtbf-outlet">BusinessGhana</span>
+<h3>“Let’s not see migrants as others” — Mr Peasah</h3>
+<span class="rtbf-date">22 February 2026</span>
+</div>
+</a>
+<!-- ─────────── TILE ─────────── -->
+<a class="rtbf-tile" href="https://www.businessghana.com/site/news/general/352741/CCMG-presses-AU-protocol-ratification-ahead-of-Mahama-s-AU-Chairmanship" rel="noopener" style="--tint:#3f5a63;--img:url('');" target="_blank">
+<div class="rtbf-tile-body">
+<span class="rtbf-outlet">BusinessGhana</span>
+<h3>CCMG presses AU protocol ratification ahead of Mahama’s AU chairmanship</h3>
+<span class="rtbf-date">25 July 2026</span>
+</div>
+</a>
+<!-- ─────────── TILE ─────────── -->
+<a class="rtbf-tile" href="https://www.myjoyonline.com/ccmg-calls-for-migration-governance-to-be-decentralised-to-district-assemblies/" rel="noopener" style="--tint:#59496b;--img:url('');" target="_blank">
+<div class="rtbf-tile-body">
+<span class="rtbf-outlet">MyJoyOnline</span>
+<h3>CCMG calls for migration governance to be decentralised to district assemblies</h3>
+<span class="rtbf-date">26 July 2026</span>
+</div>
+</a>
+</div>
+<div aria-hidden="true" class="rtbf-progress"><span id="rtbfBar" style="width: 40.5594%; margin-left: 0%;"></span></div>
+<p class="rtbf-hint">Scroll or drag to see more →</p>
+</div>
+</section>
+<style>
+.rtbf-press{
+  --navy:#12294a;
+  --navy-deep:#0b1a30;
+  --gold:#c9a44c;
+  background:var(--navy);
+  padding:78px 0 70px;
+  font-family:"Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  overflow:hidden;
+}
+.rtbf-press,.rtbf-press *,.rtbf-press *::before,.rtbf-press *::after{ box-sizing:border-box; }
+.rtbf-press h2,.rtbf-press h3{ margin:0; line-height:1.25; }
+.rtbf-press p{ margin:0; }
+
+.rtbf-press-inner{ max-width:1240px; margin:0 auto; padding:0 40px; }
+
+/* ---------- header ---------- */
+.rtbf-press-head{ display:flex; align-items:flex-end; justify-content:space-between; gap:24px; margin-bottom:34px; }
+.rtbf-eyebrow{ display:block; color:var(--gold); font-size:12px; font-weight:800; letter-spacing:.26em; text-transform:uppercase; margin-bottom:12px; }
+.rtbf-press-title{ color:#fff; font-size:34px; font-weight:800; letter-spacing:.02em; }
+
+.rtbf-nav{ display:flex; gap:10px; flex:0 0 auto; }
+.rtbf-arrow{
+  width:48px; height:48px; padding:0; border-radius:50%; cursor:pointer;
+  background:transparent; border:1.5px solid rgba(255,255,255,.35);
+  display:flex; align-items:center; justify-content:center;
+  transition:background .2s ease, border-color .2s ease, opacity .2s ease;
+}
+.rtbf-arrow svg{ width:22px; height:22px; fill:none; stroke:#fff; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+.rtbf-arrow:hover:not(:disabled){ background:var(--gold); border-color:var(--gold); }
+.rtbf-arrow:hover:not(:disabled) svg{ stroke:var(--navy); }
+.rtbf-arrow:disabled{ opacity:.25; cursor:default; }
+.rtbf-arrow:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+
+/* ---------- track ---------- */
+.rtbf-track{
+  display:flex; gap:20px;
+  overflow-x:auto; overflow-y:hidden;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+  padding-bottom:4px;
+}
+.rtbf-track::-webkit-scrollbar{ display:none; }
+.rtbf-track:focus-visible{ outline:2px solid var(--gold); outline-offset:6px; }
+
+/* ---------- tile ---------- */
+.rtbf-tile{
+  position:relative; flex:0 0 340px; height:440px;
+  border-radius:5px; overflow:hidden;
+  scroll-snap-align:start;
+  text-decoration:none; display:block;
+  background-color:var(--tint,#2f4a6b);
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+.rtbf-tile:hover{ transform:translateY(-5px); box-shadow:0 18px 42px rgba(0,0,0,.42); }
+.rtbf-tile:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+
+/* photo layer */
+.rtbf-tile::before{
+  content:""; position:absolute; inset:0; z-index:0;
+  background-image:var(--img,none);
+  background-size:cover; background-position:center;
+  transition:transform .55s ease;
+}
+.rtbf-tile:hover::before{ transform:scale(1.06); }
+
+/* navy scrim */
+.rtbf-tile::after{
+  content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(to top, rgba(9,22,41,.96) 6%, rgba(9,22,41,.72) 42%, rgba(9,22,41,.22) 78%, rgba(9,22,41,.10) 100%);
+  transition:opacity .3s ease;
+}
+.rtbf-tile:hover::after{ opacity:.86; }
+
+.rtbf-tile-body{ position:absolute; z-index:2; inset:auto 0 0 0; padding:30px 28px 30px; }
+.rtbf-outlet{
+  display:inline-block; background:var(--gold); color:var(--navy);
+  font-size:10.5px; font-weight:800; letter-spacing:.18em; text-transform:uppercase;
+  padding:6px 11px; border-radius:2px; margin-bottom:16px;
+}
+.rtbf-tile h3{ color:#fff; font-size:20px; font-weight:800; letter-spacing:.005em; margin-bottom:14px; }
+.rtbf-date{ display:block; color:rgba(255,255,255,.7); font-size:12.5px; letter-spacing:.05em; }
+.rtbf-date em{
+  font-style:normal; color:var(--gold); font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; font-size:10.5px;
+  margin-left:10px; padding-left:11px; border-left:1px solid rgba(255,255,255,.28);
+}
+
+/* play badge for video tiles */
+.rtbf-play{
+  position:absolute; z-index:2; top:24px; left:24px;
+  width:52px; height:52px; border-radius:50%;
+  border:1.5px solid rgba(255,255,255,.55);
+  background:rgba(9,22,41,.35);
+  display:flex; align-items:center; justify-content:center;
+  transition:background .25s ease, border-color .25s ease;
+}
+.rtbf-play svg{ width:20px; height:20px; fill:#fff; margin-left:3px; }
+.rtbf-tile:hover .rtbf-play{ background:var(--gold); border-color:var(--gold); }
+.rtbf-tile:hover .rtbf-play svg{ fill:var(--navy); }
+
+/* ---------- progress + hint ---------- */
+.rtbf-progress{ height:2px; background:rgba(255,255,255,.16); border-radius:2px; margin-top:34px; overflow:hidden; }
+.rtbf-progress span{ display:block; height:100%; width:25%; background:var(--gold); border-radius:2px; transition:width .15s linear, margin-left .15s linear; }
+.rtbf-press p.rtbf-hint{ color:rgba(255,255,255,.42); font-size:12px; letter-spacing:.14em; text-transform:uppercase; margin-top:18px; text-align:right; }
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .rtbf-press-inner{ padding:0 24px; }
+  .rtbf-press-title{ font-size:28px; }
+}
+@media (max-width:620px){
+  .rtbf-press{ padding:56px 0 50px; }
+  .rtbf-press-inner{ padding:0 20px; }
+  .rtbf-press-head{ align-items:flex-start; }
+  .rtbf-nav{ display:none; }
+  .rtbf-tile{ flex:0 0 82%; height:400px; }
+  .rtbf-tile h3{ font-size:18px; }
+  .rtbf-press p.rtbf-hint{ text-align:left; }
+}
+@media (prefers-reduced-motion:reduce){
+  .rtbf-track{ scroll-behavior:auto; }
+  .rtbf-tile,.rtbf-tile::before,.rtbf-tile::after{ transition:none; }
+  .rtbf-tile:hover{ transform:none; }
+}
+</style>
+<script>
+(function(){
+  var track = document.getElementById('rtbfTrack');
+  var prev  = document.getElementById('rtbfPrev');
+  var next  = document.getElementById('rtbfNext');
+  var bar   = document.getElementById('rtbfBar');
+  if(!track) return;
+
+  function step(){
+    var tile = track.querySelector('.rtbf-tile');
+    if(!tile) return 360;
+    return tile.getBoundingClientRect().width + 20;
+  }
+
+  function update(){
+    var max = track.scrollWidth - track.clientWidth;
+    if(prev) prev.disabled = track.scrollLeft <= 4;
+    if(next) next.disabled = track.scrollLeft >= max - 4;
+    if(bar){
+      var visible = max > 0 ? track.clientWidth / track.scrollWidth : 1;
+      var pct = max > 0 ? track.scrollLeft / max : 0;
+      bar.style.width = (visible * 100) + '%';
+      bar.style.marginLeft = (pct * (100 - visible * 100)) + '%';
+    }
+  }
+
+  if(next) next.addEventListener('click', function(){ track.scrollBy({left: step(), behavior:'smooth'}); });
+  if(prev) prev.addEventListener('click', function(){ track.scrollBy({left: -step(), behavior:'smooth'}); });
+
+  track.addEventListener('scroll', update, {passive:true});
+  window.addEventListener('resize', update);
+
+  // keyboard support when the track is focused
+  track.addEventListener('keydown', function(e){
+    if(e.key === 'ArrowRight'){ e.preventDefault(); track.scrollBy({left: step(), behavior:'smooth'}); }
+    if(e.key === 'ArrowLeft'){ e.preventDefault(); track.scrollBy({left: -step(), behavior:'smooth'}); }
+  });
+
+  // click-and-drag on desktop
+  var down = false, startX = 0, startScroll = 0, moved = 0;
+  track.addEventListener('mousedown', function(e){
+    down = true; moved = 0; startX = e.pageX; startScroll = track.scrollLeft;
+    track.style.scrollBehavior = 'auto'; track.style.cursor = 'grabbing';
+  });
+  window.addEventListener('mouseup', function(){
+    if(!down) return;
+    down = false; track.style.scrollBehavior = ''; track.style.cursor = '';
+  });
+  track.addEventListener('mousemove', function(e){
+    if(!down) return;
+    var dx = e.pageX - startX;
+    moved = Math.abs(dx);
+    if(moved > 4){ e.preventDefault(); track.scrollLeft = startScroll - dx; }
+  });
+  track.addEventListener('click', function(e){
+    if(moved > 6){ e.preventDefault(); }   // don't open a link after a drag
+  }, true);
+
+  update();
+})();
+</script>
+
+</section>
+
+<section class="grey cta">
+  <div class="marquee" role="heading" aria-level="1" aria-label="You can help end human trafficking"><div class="marquee-track" aria-hidden="true"><span>You can help end human trafficking</span><span>You can help end human trafficking</span><span>You can help end human trafficking</span><span>You can help end human trafficking</span><span>You can help end human trafficking</span><span>You can help end human trafficking</span></div></div>
+  <div class="wrap center">
+    <p class="btn-row"><a class="btn btn-black" href="contact.html#contactanddonate">Donate now</a><a class="btn btn-black" href="contact.html#contactanddonate">Become a volunteer</a><a class="btn btn-black" href="our-kids.html#newsletters">Read our newsletters</a></p>
+    <p class="lead">Your support helps us rescue, restore and empower more children to live free.</p>
+    <div class="gallery"><img src="images/gallery-1.jpg" alt="Children supported by Right To Be Free" loading="lazy"><img src="images/gallery-2.jpg" alt="Children supported by Right To Be Free" loading="lazy"><img src="images/gallery-3.jpg" alt="Children supported by Right To Be Free" loading="lazy"><img src="images/gallery-4.jpg" alt="Children supported by Right To Be Free" loading="lazy"></div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <p class="footer-brand">Right To Be Free</p>
+    <a class="footer-mail" href="mailto:info@righttobefree.org">info@righttobefree.org</a>
+  </div>
+  <div class="wrap footer-info">
+    <p>Sign up for updates and stories of hope, or reach out to us directly.</p>
+    <p>Accra, Ghana</p>
+    <p><a href="tel:+233244312696">+233 244 312 696</a></p>
+    <p><a href="mailto:info@righttobefree.org">info@righttobefree.org</a></p>
+    <p><a href="https://www.righttobefree.org">www.righttobefree.org</a></p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>
