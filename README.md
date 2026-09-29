@@ -46,3 +46,4 @@ Paste your Mailchimp signup-form link into `SUBSCRIBE_URL` in `js/config.js`.
 ## Editing text later
 
 Open the page on GitHub, click the pencil icon, edit, and commit. The site updates in about a minute. To add a news item, copy one `<a class="rtbf-tile">` block in `index.html`. To add a newsletter, add an `<li>` inside the right year in `our-kids.html`.
+test
