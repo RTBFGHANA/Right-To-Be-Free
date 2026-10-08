@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact & Donate – Right To Be Free</title>
+<meta name="description" content="Get in touch with Right To Be Free, volunteer, or donate to help rescue trafficked children in Ghana.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Epilogue:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body class="contact">
+<header class="site-header">
+  <a class="brand" href="index.html"><img class="logo" src="logo.png" alt="Right To Be Free logo" width="64" height="64"><span>Right To Be Free</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" aria-label="Main">
+    <a href="our-kids.html">Our kids</a>
+    <a href="learn-more.html">Learn more</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="sky contact-top" id="contactanddonate">
+  <div class="wrap contact-grid">
+    <div class="contact-left">
+      <h1 class="h-big gold">Get in touch</h1>
+
+
+<div class="rtbf-form-wrap">
+<h2 class="rtbf-heading">Send Us a Message</h2>
+
+<!-- TODO: replace YOUR_FORM_ID with your Formspree form ID (see README) -->
+<form action="https://formspree.io/f/YOUR_FORM_ID" class="rtbf-form" method="POST" novalidate="">
+
+<input name="_subject" type="hidden" value="New message from the Right To Be Free website"/>
+
+<div aria-hidden="true" class="rtbf-hp">
+<label for="rtbf-gotcha">Leave this field empty</label>
+<input autocomplete="off" id="rtbf-gotcha" name="_gotcha" tabindex="-1" type="text"/>
+</div>
+<div class="rtbf-row">
+<div class="rtbf-field">
+<label for="rtbf-first">First Name <span class="rtbf-req">*</span></label>
+<input autocomplete="given-name" id="rtbf-first" name="First Name" placeholder="e.g. Ama" required="" type="text"/>
+</div>
+<div class="rtbf-field">
+<label for="rtbf-last">Last Name <span class="rtbf-req">*</span></label>
+<input autocomplete="family-name" id="rtbf-last" name="Last Name" placeholder="e.g. Mensah" required="" type="text"/>
+</div>
+</div>
+<div class="rtbf-field">
+<label for="rtbf-email">Email Address <span class="rtbf-req">*</span></label>
+<input autocomplete="email" id="rtbf-email" name="email" placeholder="you@example.com" required="" type="email"/>
+</div>
+<div class="rtbf-field">
+<label for="rtbf-phone">Phone Number</label>
+<input autocomplete="tel" id="rtbf-phone" name="Phone Number" placeholder="+233 XX XXX XXXX" type="tel"/>
+</div>
+<div class="rtbf-field">
+<label for="rtbf-intent">I want to… <span class="rtbf-req">*</span></label>
+<select class="is-empty" id="rtbf-intent" name="I want to" required="">
+<option value="">Select an option</option>
+<option>Make a donation</option>
+<option>Volunteer my time</option>
+<option>Partner with Right To Be Free</option>
+<option>Fundraise for the cause</option>
+<option>Media / Press enquiry</option>
+<option>General enquiry</option>
+</select>
+</div>
+<div class="rtbf-field">
+<label for="rtbf-message">Message <span class="rtbf-req">*</span></label>
+<textarea id="rtbf-message" maxlength="4000" name="message" placeholder="Tell us how you'd like to help or what you need…" required="" rows="5"></textarea>
+</div>
+<label class="rtbf-check">
+<input id="rtbf-subscribe" name="Subscribe" type="checkbox" value="Yes"/>
+<span>Subscribe me to updates and stories of hope from Right To Be Free.</span>
+</label>
+<button class="rtbf-btn" type="submit">Send Message</button>
+
+<p class="rtbf-privacy">
+      We respect your privacy. Your information is never shared or sold.<br/>
+      This form is not monitored around the clock. If a child is in immediate danger,
+      please call <a href="tel:+233244312696"><strong>+233 244 312 696</strong></a>, or contact us directly at
+      <a href="mailto:info@righttobefree.org">info@righttobefree.org</a>.
+    </p>
+<p aria-live="polite" class="rtbf-status" role="status" tabindex="-1"></p>
+</form>
+</div>
+<style>
+/* ---------- Palette ---------- */
+.rtbf-form-wrap{
+  --rtbf-navy:#12294a;
+  --rtbf-gold:#c9a44c;
+  --rtbf-gold-dark:#b8933e;
+  --rtbf-star:#d97a4e;
+  --rtbf-border:#e2e2e2;
+  --rtbf-placeholder:#9a9a9a;
+  max-width:760px;
+  margin:0 auto;
+  padding:8px 4px 24px;
+  background:transparent;
+  font-family:"Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  box-sizing:border-box;
+}
+.rtbf-form-wrap *,
+.rtbf-form-wrap *::before,
+.rtbf-form-wrap *::after{ box-sizing:border-box; }
+
+/* ---------- Heading ---------- */
+.rtbf-heading{
+  margin:0 0 28px;
+  color:var(--rtbf-navy);
+  font-size:30px;
+  font-weight:800;
+  line-height:1.2;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+/* ---------- Layout ---------- */
+.rtbf-row{ display:flex; gap:26px; }
+.rtbf-row .rtbf-field{ flex:1 1 0; min-width:0; }
+.rtbf-field{ margin-bottom:22px; }
+
+/* ---------- Honeypot (hidden from humans, visible to bots) ---------- */
+.rtbf-hp{
+  position:absolute !important;
+  left:-9999px !important;
+  width:1px; height:1px;
+  overflow:hidden;
+}
+
+/* ---------- Labels ---------- */
+.rtbf-form label{
+  display:block;
+  margin-bottom:9px;
+  color:var(--rtbf-navy);
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.rtbf-req{ color:var(--rtbf-star); font-weight:700; }
+
+/* ---------- Inputs ---------- */
+.rtbf-form input[type="text"],
+.rtbf-form input[type="email"],
+.rtbf-form input[type="tel"],
+.rtbf-form select,
+.rtbf-form textarea{
+  display:block;
+  width:100%;
+  padding:15px 16px;
+  border:1px solid var(--rtbf-border);
+  border-radius:4px;
+  background:#fff;
+  color:var(--rtbf-navy);
+  font-family:inherit;
+  font-size:17px;
+  line-height:1.4;
+  transition:border-color .15s ease, box-shadow .15s ease;
+  appearance:none;
+  -webkit-appearance:none;
+}
+.rtbf-form textarea{ min-height:150px; resize:vertical; }
+.rtbf-form ::placeholder{ color:var(--rtbf-placeholder); opacity:1; }
+.rtbf-form input:focus,
+.rtbf-form select:focus,
+.rtbf-form textarea:focus{
+  outline:none;
+  border-color:var(--rtbf-navy);
+  box-shadow:0 0 0 1px var(--rtbf-navy);
+}
+/* Invalid state, only after the user has tried to submit */
+.rtbf-form.is-submitted :invalid{
+  border-color:#b03434;
+  box-shadow:0 0 0 1px #b03434;
+}
+
+/* ---------- Select arrow ---------- */
+.rtbf-form select{
+  padding-right:46px;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2312294a' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 6l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 16px center;
+  background-size:16px 16px;
+  cursor:pointer;
+}
+.rtbf-form select.is-empty{ color:var(--rtbf-placeholder); }
+
+/* ---------- Checkbox ---------- */
+.rtbf-check{
+  display:flex !important;
+  align-items:flex-start;
+  gap:14px;
+  margin:26px 0 24px !important;
+  text-transform:none !important;
+  letter-spacing:normal !important;
+  font-weight:400 !important;
+  font-size:16px !important;
+  line-height:1.5;
+  color:#3d4a5c !important;
+  cursor:pointer;
+}
+.rtbf-check input[type="checkbox"]{
+  flex:0 0 auto;
+  width:20px;
+  height:20px;
+  margin:1px 0 0;
+  border:1px solid #b9bfc7;
+  border-radius:3px;
+  background:#fff;
+  appearance:none;
+  -webkit-appearance:none;
+  cursor:pointer;
+  transition:background .15s ease, border-color .15s ease;
+}
+.rtbf-check input[type="checkbox"]:checked{
+  background:var(--rtbf-navy);
+  border-color:var(--rtbf-navy);
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8.5l3.2 3.2L13 5'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:14px 14px;
+}
+.rtbf-check input[type="checkbox"]:focus-visible{
+  outline:2px solid var(--rtbf-navy);
+  outline-offset:2px;
+}
+
+/* ---------- Button ---------- */
+.rtbf-btn{
+  display:block;
+  width:100%;
+  padding:22px 20px;
+  border:none;
+  border-radius:2px;
+  background:var(--rtbf-gold);
+  color:var(--rtbf-navy);
+  font-family:inherit;
+  font-size:19px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  cursor:pointer;
+  transition:background .18s ease;
+}
+.rtbf-btn:hover{ background:var(--rtbf-gold-dark); }
+.rtbf-btn:disabled{ opacity:.65; cursor:default; }
+
+/* ---------- Footnotes ---------- */
+.rtbf-privacy{
+  margin:16px 0 0;
+  color:#8a8a8a;
+  font-size:14px;
+  line-height:1.6;
+  text-align:center;
+}
+.rtbf-privacy a{ color:#8a8a8a; text-decoration:underline; }
+.rtbf-status{
+  margin:14px 0 0;
+  font-size:15px;
+  text-align:center;
+  display:none;
+}
+.rtbf-status.is-visible{ display:block; }
+.rtbf-status.is-ok{ color:#1f6b46; }
+.rtbf-status.is-error{ color:#b03434; }
+.rtbf-status:focus{ outline:none; }
+
+/* ---------- Mobile ---------- */
+@media (max-width:640px){
+  .rtbf-row{ flex-direction:column; gap:0; }
+  .rtbf-heading{ font-size:24px; }
+  .rtbf-btn{ padding:18px; font-size:17px; }
+}
+</style>
+<script>
+(function(){
+  // Delegated listeners on the document, so this keeps working if Squarespace
+  // loads the page over Ajax, and if the block ever appears twice on a page.
+  if (window.rtbfFormInit) return;
+  window.rtbfFormInit = true;
+
+  var FALLBACK = 'Sorry, something went wrong. Please try again, or email us directly at info@righttobefree.org.';
+
+  // Greys out the placeholder option until a real choice is made
+  function syncSelect(sel){
+    if (sel && sel.classList) sel.classList.toggle('is-empty', !sel.value);
+  }
+  document.addEventListener('change', function(e){
+    if (e.target && e.target.matches && e.target.matches('.rtbf-form select')) syncSelect(e.target);
+  });
+  document.querySelectorAll('.rtbf-form select').forEach(syncSelect);
+
+  document.addEventListener('submit', function(e){
+    var form = e.target;
+    if (!form || !form.classList || !form.classList.contains('rtbf-form')) return;
+    e.preventDefault();
+
+    var status = form.querySelector('.rtbf-status');
+    var btn    = form.querySelector('.rtbf-btn');
+
+    // We set novalidate on the form, so trigger the browser's own checks here
+    form.classList.add('is-submitted');
+    if (!form.checkValidity()){
+      form.reportValidity();
+      return;
+    }
+
+    var original = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    status.className = 'rtbf-status';
+
+    var data = new FormData(form);
+    // Always report a subscribe answer, so "no" is not just a missing line
+    data.set('Subscribe', form.querySelector('#rtbf-subscribe').checked ? 'Yes' : 'No');
+
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function(res){
+      return res.json().catch(function(){ return {}; }).then(function(body){
+        return { ok: res.ok, body: body };
+      });
+    })
+    .then(function(r){
+      if (r.ok){
+        form.reset();
+        form.classList.remove('is-submitted');
+        form.querySelectorAll('select').forEach(syncSelect);
+        status.textContent = 'Thank you — your message has been sent. We’ll be in touch soon.';
+        status.className = 'rtbf-status is-visible is-ok';
+      } else {
+        var msg = FALLBACK;
+        if (r.body && r.body.errors && r.body.errors.length){
+          msg = r.body.errors.map(function(x){ return x.message; }).join(', ');
+        }
+        status.textContent = msg;
+        status.className = 'rtbf-status is-visible is-error';
+      }
+    })
+    .catch(function(){
+      status.textContent = FALLBACK;
+      status.className = 'rtbf-status is-visible is-error';
+    })
+    .then(function(){
+      btn.disabled = false;
+      btn.textContent = original;
+      // Move screen readers and the viewport to the result message
+      status.focus();
+      if (status.scrollIntoView) status.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    });
+  });
+})();
+</script>
+
+    </div>
+    <div class="contact-right">
+      <figure class="contact-photo"><img src="contact-photo-new.jpg" alt="Eric Peasah with children on a boat on Lake Volta" loading="lazy"></figure>
+      <h2 class="h-big gold" id="donate">Donate</h2>
+      <form class="donate-box" id="donate-form" novalidate>
+        <fieldset>
+          <legend class="sr-only">Donation amount</legend>
+          <div class="amounts" id="amounts"></div>
+          <label class="check"><input type="radio" name="amt" value="custom" id="amt-custom"> <span>Custom amount</span></label>
+          <input type="number" min="1" step="1" inputmode="numeric" id="custom-amount" class="custom-amount" placeholder="Enter amount" hidden>
+        </fieldset>
+        <label class="field-label" for="freq">Frequency</label>
+        <select id="freq"><option value="monthly">Monthly Donation</option><option value="once">One-time Donation</option></select>
+        <label class="field-label" for="donor-email">Your email (for your receipt)</label>
+        <input type="email" id="donor-email" autocomplete="email" placeholder="you@example.com" required>
+        <label class="check"><input type="checkbox" id="cover-fee" checked> <span>SUPPORT US BY COVERING THE FEES WE HAVE TO PAY</span></label>
+        <p class="fee-line"><span>3% Cover the Fee</span><span id="fee-amt">&mdash;</span></p>
+        <p class="fee-line total"><span id="total-label">Total per month</span><span id="total-amt">&mdash;</span></p>
+        <p class="center"><button class="btn btn-black" type="submit" id="donate-btn">Donate</button></p>
+        <p class="donate-status" id="donate-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="sky contact-text">
+  <div class="wrap narrow">
+    <h2 class="h-small">Donate</h2>
+    <p>Right To Be Free is a registered 501(c)(3) non-profit organization in the USA. All operating costs are funded internally, so 100% of your tax-deductible donation directly supports victims of human trafficking. No funds are ever paid to the masters to release trafficked victims.</p><p>We use Paystack to receive your donations because we wanted a donation option that was accessible to Ghanaians as well as people from other countries to give everyone a chance to help fight child trafficking.</p><p>If you would like to make a donation in honor or memory of someone, please include the recipient's name, e-mail or mailing address, and message. A letter will be sent to the recipient to notify them of your gift.</p>
+    <h2 class="h-small">Volunteer</h2>
+    <p>Depending on available skill sets and RTBF’s program needs, volunteers will assist in areas such as rescue missions, school and shelter activities, or office support such as webpage design and database management. Contact Eric Peasah at <a href="mailto:EPeasah@righttobefree.org" target="_blank" rel="noopener">EPeasah@righttobefree.org </a></p>
+    <h2 class="h-small">Raise Awareness / Organize Fundraisers</h2>
+    <p>Contact us if you would like to organize an event to raise awareness surrounding issues of child trafficking or migration. We would love to collaborate and hear your ideas.</p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <p class="footer-brand">Right To Be Free</p>
+    <a class="footer-mail" href="mailto:info@righttobefree.org">info@righttobefree.org</a>
+  </div>
+  <div class="wrap footer-info">
+    <p>Sign up for updates and stories of hope, or reach out to us directly.</p>
+    <p>Accra, Ghana</p>
+    <p><a href="tel:+233244312696">+233 244 312 696</a></p>
+    <p><a href="mailto:info@righttobefree.org">info@righttobefree.org</a></p>
+    <p><a href="https://www.righttobefree.org">www.righttobefree.org</a></p>
+  </div>
+</footer>
+<script src="config.js"></script>
+<script src="https://js.paystack.co/v2/inline.js"></script>
+<script src="donate.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
